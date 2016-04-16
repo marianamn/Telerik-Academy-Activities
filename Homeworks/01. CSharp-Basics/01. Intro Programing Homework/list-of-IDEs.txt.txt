@@ -1,0 +1,14 @@
+
+
+Problem 12. Development Environments• Perform a research (e.g. in Google or Wikipedia) and provide a short list with popular development environments (IDEs) like Visual Studio.
+• Write in a text file called  “list-of-IDEs.txt”  at least five IDEs along with 2-3 sentences about each of them. Use English.
+
+1. Microsoft Visual Studio - It is used to develop computer programs for Microsoft Windows, as well as web sites, web applications and web services. Visual Studio supports different programming languages and allows the code editor and debugger to support (to varying degrees) nearly any programming language. Built-in languages include C C++ and C++/CLI (via Visual C++), VB.NET (via Visual Basic .NET), C# (via Visual C#), and F#. Support for other languages such as M, Python, and Ruby among others is available via language services installed separately. It also supports XML/XSLT, HTML/XHTML, JavaScript and CSS. Visual Studio includes a debugger that works both as a source-level debugger and as a machine-level debugger.
+
+2. NetBeans - is an integrated development environment (IDE) for developing primarily with Java, but also with other languages, in particular PHP, C/C++, and HTML5. The NetBeans IDE is written in Java and can run on Windows, OS X, Linux, Solaris and other platforms supporting a compatible JVM. The platform offers reusable services common to desktop applications, allowing developers to focus on the logic specific to their application. 
+
+3. Eclipse is an integrated development environment (IDE). It contains a base workspace and an extensible plug-in system for customizing the environment. Written mostly in Java, Eclipse can be used to develop applications. Eclipse SDK is free and open source software.
+
+4. Code::Blocks is a free, open source cross-platform IDE which supports multiple compilers including GCC, Clang and Visual C++. Code::Blocks is oriented towards C, C++, and Fortran. Code::Blocks is being developed for Windows, Linux, and Mac OS X and has been ported to FreeBSD, OpenBSD and Solaris.
+
+5. Adobe Flash Builder (previously known as Adobe Flex Builder)[3] is an integrated development environment (IDE) built on the Eclipse platform that speeds development of rich Internet applications (RIAs) and cross-platform desktop applications, particularly for the Adobe Flash platform.
