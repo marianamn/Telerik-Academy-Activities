@@ -1,0 +1,12 @@
+body{
+    background-color: #5F9EA0;
+    width: 80%;
+    position: absolute;
+    padding-left: 5%;
+    font-size: 1.2em;
+}
+
+#profile-picture{
+    width: 100px;
+    height: 150px;
+}

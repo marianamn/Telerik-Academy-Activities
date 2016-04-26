@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8" />
+    <title>Nested List</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <p>Preceding Text</p>
+    <ol type="I">
+        <li>
+            Listed item 1
+            <ol type="a">
+                <li><a href="#">Nested item 1.1</a></li>
+                <li><a href="#">Nested item 1.2</a></li>
+            </ol>
+        </li>
+
+        <li>
+            Listed item 2
+            <ol type="1">
+                <li><a href="#">Nested item 2.1</a></li>
+                <li>
+                    <a href="#">Nested item 2.2</a>
+                    <ul type="circle">
+                        <li><a href="#">Nested item 2.2.1</a></li>
+                        <li>
+                            <a href="#">Nested item 2.2.2</a>
+                            <ul type="square">
+                                <li><a href="#">Nested item 2.2.2.1</a></li>
+                                <li><a href="#">Nested item 2.2.2.2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nested item 2.2.3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Nested item 2.3</a></li>
+            </ol>
+        </li>
+
+        <li>
+            Listed item 3
+            <ul type="disc">
+                <li><a href="#">Nested item 3.1</a></li>
+                <li><a href="#">Nested item 3.2</a></li>
+                <li><a href="#">Nested item 3.3</a></li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>

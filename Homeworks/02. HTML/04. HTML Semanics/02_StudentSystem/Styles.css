@@ -1,0 +1,20 @@
+﻿a img{
+    float:left;
+    width:90px;
+    height:60px
+}
+h2{
+    text-align:center
+}
+h2,img{
+    display:inline-block;
+}
+ul{
+    list-style-type:disc;
+}
+table,th,td{
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding:5px;
+    text-align:center;
+}

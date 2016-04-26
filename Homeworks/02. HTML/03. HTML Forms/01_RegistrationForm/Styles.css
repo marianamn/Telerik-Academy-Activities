@@ -1,0 +1,59 @@
+table, td, th{
+    border-spacing:0;
+    padding: 5px;
+    border-collapse:collapse
+}
+
+td{
+    width:300px;
+    border:1px solid;
+}
+
+.leftCol{
+    text-align:right;
+    width: 150px;
+}
+
+input{
+    width:250px
+}
+
+.city{
+    width:210px
+}
+
+textarea{
+    grid-row-sizing:10px;
+    grid-column-sizing:30px;
+    height:100px;
+    width: 250px;
+}
+
+.dateField{
+    width:30px
+}
+
+.textField1{
+    width:60px
+}
+
+.state{
+    width:30px
+}
+
+.num{
+    width: 60px
+}
+
+.phone{
+    width:70px
+}
+
+.radio{
+    width:10px
+}
+
+.lastRow{
+    background: #D1EDE1;
+    text-align:center
+}

@@ -1,0 +1,26 @@
+table{
+    border-spacing:0;
+    padding:20px;
+    border-collapse:collapse
+}
+
+th a{
+    color:#00a4ff;
+    font: 30px
+    Corbel;
+}
+
+.image{
+    width:150px;
+    height:100px;
+    align-self:flex-start
+}
+
+legend{
+    text-align:center;
+}
+
+td{
+    text-align:center;
+    font: 20px Corbel;
+}
