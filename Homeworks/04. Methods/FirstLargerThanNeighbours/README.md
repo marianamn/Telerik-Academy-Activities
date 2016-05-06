@@ -20,6 +20,3 @@ Write a method that returns the index of the first element in array that is larg
 | Input | Output |
 |:------|:-------|
 | 6<br>-26 **-25** -28 **31** 2 27 | 1 |
-
-## Submission
-- Submit your code [here](http://bgcoder.com/Contests/Compete/Index/317#5)

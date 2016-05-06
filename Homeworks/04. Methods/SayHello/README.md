@@ -19,7 +19,3 @@ Write a program to test this method.
 | Input | Output        |
 |:------|:--------------|
 | Peter | Hello, Peter! |
-
-
-## Submission
-- Submit your code [here](http://bgcoder.com/Contests/Compete/Index/317#0)

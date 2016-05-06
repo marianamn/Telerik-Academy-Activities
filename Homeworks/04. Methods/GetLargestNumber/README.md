@@ -20,6 +20,3 @@ Write a program that reads `3` integers from the console and prints the largest 
 |:--------|:-------|
 | 8 3 6   | 8      |
 | 7 19 19 | 19     |
-
-## Submission
-- Submit your code [here](http://bgcoder.com/Contests/Compete/Index/317#1)

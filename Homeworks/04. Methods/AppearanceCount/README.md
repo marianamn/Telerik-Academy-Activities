@@ -22,6 +22,3 @@ Write a test program to check if the method is working correctly.
 | Input | Output |
 |:------|:-------|
 | 8<br>28 6 21 6 -7856 73 73 -56<br>73 | 2 |
-
-## Submission
-- Submit your code [here](http://bgcoder.com/Contests/Compete/Index/317#3)

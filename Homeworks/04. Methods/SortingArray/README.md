@@ -25,5 +25,3 @@ Write a program that sorts a given array.
 | 6<br>3 4 1 5 2 6 | 1 2 3 4 5 6 |
 | 10<br>36 10 1 34 28 38 31 27 30 20 | 1 10 20 27 28 30 31 34 36 38 |
 
-## Submission
-- Submit your code [here](http://bgcoder.com/Contests/Compete/Index/317#8)

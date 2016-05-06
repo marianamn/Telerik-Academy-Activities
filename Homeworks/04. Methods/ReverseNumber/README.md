@@ -19,6 +19,3 @@ Write a method that reverses the digits of a given decimal number.
 |:-------|:-------|
 | 256    | 652    |
 | 123.45 | 54.321 |
-
-## Submission
-- Submit your code [here](http://bgcoder.com/Contests/Compete/Index/317#6)

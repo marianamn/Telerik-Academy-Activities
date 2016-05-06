@@ -20,6 +20,3 @@ Write a program to calculate `N!`.
 | Input  | Output |
 |:-------|:-------|
 | 5      | 120    |
-
-## Submission
-- Submit your code [here](http://bgcoder.com/Contests/Compete/Index/317#9)

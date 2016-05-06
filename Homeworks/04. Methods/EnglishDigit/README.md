@@ -19,6 +19,3 @@ Write a program that reads a number and prints the result of the method.
 | Input  | Output |
 |:-------|:-------|
 | 42     | two    |
-
-## Submission
-- Submit your code [here](http://bgcoder.com/Contests/Compete/Index/317#2)

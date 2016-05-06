@@ -21,6 +21,3 @@ Write program that reads an array of numbers and prints how many of them are lar
 | Input | Output |
 |:------|:-------|
 | 6<br>-26 **-25** -28 **31** 2 27 | 2 |
-
-## Submission
-- Submit your code [here](http://bgcoder.com/Contests/Compete/Index/317#4)
