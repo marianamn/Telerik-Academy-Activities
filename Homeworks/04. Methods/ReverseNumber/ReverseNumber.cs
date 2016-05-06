@@ -9,16 +9,16 @@ class ReverseNumber
 
         if (number[0] != '-')
         {
-            Console.WriteLine(DecimalNumberReverse(number));
+            Console.WriteLine(NumberReverse(number));
         }
         else
         {
-            Console.WriteLine("-{0}", DecimalNumberReverse(number));
+            Console.WriteLine("-{0}", NumberReverse(number));
         }
         
     }
 
-    static StringBuilder DecimalNumberReverse(string number)
+    static StringBuilder NumberReverse(string number)
     {
         StringBuilder reversedNumber = new StringBuilder();
 
