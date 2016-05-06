@@ -57,7 +57,7 @@ class SubstractingPolynomials
 
         for (int i = 0; i < n; i++)
         {
-            multiplication[i] = firstPolynomial[i] - secondPolynomial[i];
+            multiplication[i] = firstPolynomial[i] * secondPolynomial[i];
         }
 
         Console.WriteLine(string.Join(" ", multiplication));
