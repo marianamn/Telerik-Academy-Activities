@@ -24,7 +24,7 @@ class LargerThanNeighbours
     {
         int count = 0;
 
-        for (int i = 1; i < array.Length - 2; i++)
+        for (int i = 1; i < array.Length - 1; i++)
         {
             if (array[i] > array[i + 1] && array[i] > array[i-1])
             {
