@@ -1,32 +1,26 @@
-﻿/*Problem 14. Integer calculations
-• Write methods to calculate  minimum ,  maximum ,  average ,  sum  and  product  of given set 
-  of integer numbers.
-• Use variable number of arguments. */
-
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
 
 class IntegerCalculations
 {
-    static void Main(string[] args)
+    private const int N = 5;
+
+    static void Main()
     {
-        Console.WriteLine("Enter number sequence, separated by commas and space:");
-        string input = Console.ReadLine();
-        string[] numbers = input.Split(new char[] { ',', ' ' }, System.StringSplitOptions.RemoveEmptyEntries);
+        string[] numbers = Console.ReadLine().Split(' ');
         int[] array = new int[numbers.Length];
+
         for (int i = 0; i < numbers.Length; i++)
         {
             array[i] = int.Parse(numbers[i]);
         }
 
-        Console.WriteLine("Min={0}", Minimum(array));
-        Console.WriteLine("Max={0}", Maximum(array));
-        Console.WriteLine("Avrg={0}", Average(array));
-        Console.WriteLine("Sum={0}", Sum(array));
-        Console.WriteLine("Product={0}", Product(array));
+        Console.WriteLine(Minimum(array));
+        Console.WriteLine(Maximum(array));
+        Console.WriteLine("{0:F2}", Average(array));
+        Console.WriteLine(Sum(array));
+        Console.WriteLine(Product(array));
     }
-
 
     static int Minimum(int[] array)
     {
