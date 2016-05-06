@@ -1,93 +1,71 @@
-﻿/*Problem 8. Number as array
-• Write a method that adds two positive integer numbers represented as arrays of digits 
- (each array element  arr[i]  contains a digit; the last digit is kept in  arr[0] ).
-• Each of the numbers that will be added could have up to  10 000  digits. */
-
-
-using System;
+﻿using System;
 using System.Linq;
+
 class NumberAsArray
 {
-    static void Main() 
-     { 
-         Console.WriteLine("Enter first integer number: "); 
-         string input1 = Console.ReadLine(); 
- 
- 
-         Console.WriteLine("Enter second integer number: "); 
-         string input2 = Console.ReadLine(); 
- 
-         // Check the lengths, if one of them is bigger than other => add zeroes to smaller length
-         int numLenght = 0;
-         if (input1.Length > input2.Length)
-         {
-             numLenght = input1.Length;
-         }
-         else
-         {
-             numLenght = input2.Length;
-         }
-         input1 = input1.PadLeft(numLenght, '0');
-         input2 = input2.PadLeft(numLenght, '0');
+    static void Main()
+    {
+        string[] lengths = Console.ReadLine().Split(' ');
+        int n = int.Parse(lengths[0]);
+        int m = int.Parse(lengths[1]);
 
+        string[] firstLine = Console.ReadLine().Split(' ');
+        string[] secondLine = Console.ReadLine().Split(' ');
 
-         CreateArrayNumber(input1);
-         CreateArrayNumber(input2); 
+        int[] firstArray = new int[n];
 
-         //check if number lenght is les than 10000 digits
-         if (numLenght>10000)
-         {
-             Console.WriteLine("Invalid Input!");
-         }
-         else
-         {
-             SumOfTwoArrays(CreateArrayNumber(input1), CreateArrayNumber(input2));
-             PrintTheNumber(SumOfTwoArrays(CreateArrayNumber(input1), CreateArrayNumber(input2)));
-             Console.WriteLine(); 
-         }
-         
-     } 
-     static int[] CreateArrayNumber(string input) 
-     { 
-         int[] number = new int[input.Length]; 
- 
-         for (int i = 0; i < number.Length; i++) 
-         { 
-             number[i] = int.Parse(input[input.Length - 1 - i].ToString()); 
-         } 
-         return number; 
-    } 
-     
-    static void PrintTheNumber(string number) 
-     { 
-         Console.WriteLine("The summed number is: "); 
-         for (int i = number.Length - 1; i >= 0; i--) 
-         { 
-             Console.Write(number[i]); 
-         } 
-     } 
-     
-    static string SumOfTwoArrays(int[] numberOne, int[] numberTwo) 
-     { 
-         if (numberOne.Length > numberTwo.Length) 
-         {
-             return SumOfTwoArrays(numberTwo, numberOne); 
-         } 
- 
- 
-         string summedNumber = string.Empty; 
-         int rest = 0; 
-          
-         for (int i = 0; i < numberTwo.Length ; i++) 
-         { 
-            summedNumber += ((numberOne[i] + numberTwo[i]) % 10 + rest).ToString(); 
-             rest = (numberOne[i] + numberTwo[i]) / 10; 
-            if (rest > 0 && i == numberTwo.Length - 1) 
-             { 
-                 summedNumber += rest; 
-             }                
-         }         
-         return summedNumber; 
-     } 
-      
- } 
+        for (int i = 0; i < n; i++)
+        {
+            firstArray[i] = int.Parse(firstLine[i]);
+        }
+
+        int[] secondArray = new int[m];
+
+        for (int i = 0; i < m; i++)
+        {
+            secondArray[i] = int.Parse(secondLine[i]);
+        }
+
+        int[] sumArray = SumArraysDigits(firstArray, secondArray);
+
+        Console.WriteLine(string.Join(" ", sumArray));
+    }
+
+    private static int[] SumArraysDigits(int[] firstArray, int[] secondArray)
+    {
+        int maxLenght = Math.Max(firstArray.Length, secondArray.Length);
+        int[] sums = new int[maxLenght];
+        int sum = 0;
+
+        for (int i = 0; i < Math.Min(firstArray.Length, secondArray.Length); i++)
+        {
+            sum = firstArray[i] + secondArray[i];
+
+            if (sum / 10 == 0)
+            {
+                sums[i] = sum;
+            }
+            else
+            {
+                sums[i] = sum % 10;
+            }
+        }
+
+        if (firstArray.Length > secondArray.Length)
+        {
+            for (int i = secondArray.Length; i < firstArray.Length; i++)
+            {
+                sums[i] = firstArray[i];
+            }
+        }
+        else
+        {
+            for (int i = firstArray.Length; i < secondArray.Length; i++)
+            {
+                sums[i] = secondArray[i];
+            }
+        }
+
+        return sums;
+    }
+}
