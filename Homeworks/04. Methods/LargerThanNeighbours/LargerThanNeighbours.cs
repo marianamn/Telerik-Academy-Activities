@@ -1,68 +1,37 @@
-﻿/*Problem 5. Larger than neighbours
- • Write a method that checks if the element at given position in given array of integers is 
-   larger than its two neighbours (when such exist).*/
+﻿using System;
 
-
-using System;
 class LargerThanNeighbours
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Enter array lenght:");
         int n = int.Parse(Console.ReadLine());
+        string[] input = Console.ReadLine().Split(' ');
 
-        Console.WriteLine("Enter array:");
         int[] array = new int[n];
+
         for (int i = 0; i < n; i++)
         {
-            Console.Write("array[{0}]=", i);
-            array[i] = int.Parse(Console.ReadLine());
+            array[i] = int.Parse(input[i]);
         }
 
+        int count = LargerThanItsTwoNeighbours(array);
 
-        Console.WriteLine("Enter position in array to check: ");
-        int position = int.Parse(Console.ReadLine());
-
-
-        if (CheckPositionExist(position, array) == true)
-        {
-            LargerThanItsTwoNeighbours(position, array);
-        }
+        Console.WriteLine(count);
     }
 
 
-    static void LargerThanItsTwoNeighbours(int position, int[] array)
+    static int LargerThanItsTwoNeighbours(int[] array)
     {
-        int num = array[position];
-        if (array[position - 1] < num && num > array[position + 1])
-        {
-            Console.WriteLine("Number {0} is larger than its two neighbours.", num);
-        }
-        else
-        {
-            Console.WriteLine("Number {0} is not larger than its two neighbours.", num);
-        }
-    }
+        int count = 0;
 
-
-    static bool CheckPositionExist(int position, int[] array)
-    {
-        if (position >= (array.Length - 1))
+        for (int i = 1; i < array.Length - 2; i++)
         {
-            Console.WriteLine("Invalid input! \nPosition you have entered doesn't exist in array or doesn't have two neighbours.");
-            return false;
-        }
-        else
-        {
-            if (position <= 0)
+            if (array[i] > array[i + 1] && array[i] > array[i-1])
             {
-                Console.WriteLine("Invalid input! \nPosition you have entered doesn't exist in array or doesn't have two neighbours.");
-                return false;
-            }
-            else
-            {
-                return true;
+                count++;
             }
         }
+
+        return count;
     }
 }
