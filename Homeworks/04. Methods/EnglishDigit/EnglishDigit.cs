@@ -1,18 +1,9 @@
-﻿/*Problem 3. English digit
- • Write a method that returns the last digit of given integer as an English word.
+﻿using System;
 
-Examples:
-input      output
-512        two 
-1024       four 
-12309      nine    */ 
-
-using System;
 class EnglishDigit
 {
     static void Main()
     {
-        Console.WriteLine("Enter number:");
         int number = int.Parse(Console.ReadLine());
 
         LastDigitAsWord(number);
@@ -21,6 +12,7 @@ class EnglishDigit
     static void LastDigitAsWord(int input)
     {
         int latsDigit = input % 10;
+
         switch (latsDigit)
         {
             case 1: Console.WriteLine("One"); break;
