@@ -1,21 +1,13 @@
-﻿/*Problem 2. Get largest number
-• Write a method  GetMax()  with two parameters that returns the larger of two integers.
-• Write a program that reads  3  integers from the console and prints the largest of them using the 
-  method  GetMax() .*/
-
-
-using System;
+﻿using System;
 
 class GetLargestNumber
 {
     static void Main()
     {
-        Console.WriteLine("Enter first number:");
-        int a = int.Parse(Console.ReadLine());
-        Console.WriteLine("Enter second number:");
-        int b = int.Parse(Console.ReadLine());
-        Console.WriteLine("Enter third number:");
-        int c = int.Parse(Console.ReadLine());
+        string[] input = Console.ReadLine().Split(' ');
+        int a = int.Parse(input[0]);
+        int b = int.Parse(input[1]);
+        int c = int.Parse(input[2]);
 
         if (a > c)
         {
@@ -25,12 +17,12 @@ class GetLargestNumber
         {
             GetMax(b, c);
         }
-
     }
 
     static void GetMax(int firstNumber, int secondNumber)
     {
-        int max;
+        int max = 0;
+
         if (firstNumber >= secondNumber)
         {
            max = firstNumber;
@@ -39,6 +31,7 @@ class GetLargestNumber
         {
             max = secondNumber;
         }
-        Console.WriteLine("Maximal number is: {0}", max);
+
+        Console.WriteLine(max);
     }
 }
