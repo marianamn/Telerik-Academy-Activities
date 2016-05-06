@@ -1,20 +1,13 @@
-﻿/*Problem 7. Reverse number
-• Write a method that reverses the digits of given decimal number.
+﻿using System;
+using System.Text;
 
-Example:
-input   output
-256     652    */
-
-
-using System;
 class ReverseNumber
 {
     static void Main()
     {
-        Console.WriteLine("Enter decimal number:");
-        decimal number = decimal.Parse(Console.ReadLine());
+        string number = Console.ReadLine();
 
-        if (number > 0)
+        if (number[0] != '-')
         {
             Console.WriteLine(DecimalNumberReverse(number));
         }
@@ -25,30 +18,16 @@ class ReverseNumber
         
     }
 
-    static string DecimalNumberReverse(decimal num)
+    static StringBuilder DecimalNumberReverse(string number)
     {
-        string array = "";
-        if (num<0)
+        StringBuilder reversedNumber = new StringBuilder();
+
+        for (int i = number.Length - 1; i >= 0; i--)
         {
-            num = -num;
+            reversedNumber.Append(number[i]);
         }
 
-        while ((num / 10) > 0)
-        {
-            decimal lastDig = num % 10;
-            array = array + lastDig + "";
-            num = Math.Floor(num / 10); 
-            if (num == 0)
-            {
-                break;
-            }
-            else
-            {
-                continue;
-            }
-        }
-        return array;
-        
+        return reversedNumber;
     }
 }
 
