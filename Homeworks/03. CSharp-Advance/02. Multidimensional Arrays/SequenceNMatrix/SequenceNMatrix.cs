@@ -26,6 +26,8 @@ class SequenceNMatrix
         //check if there are equal elements in rows
         for (int row = 0; row < n; row++)
         {
+            count = 1;
+
             for (int col = 0; col < m - 1; col++)
             {
                 if (matrix[row, col] == matrix[row, col + 1])
@@ -42,13 +44,13 @@ class SequenceNMatrix
                     maxCount = count;
                 }
             }
-
-            count = 1;
         }
 
         //check if there are equal elements in columns
         for (int col = 0; col < m; col++)
         {
+            count = 1;
+
             for (int row = 0; row < n - 1; row++)
             {
                 if (matrix[row, col] == matrix[row + 1, col])
@@ -65,49 +67,83 @@ class SequenceNMatrix
                     maxCount = count;
                 }
             }
-        
+        }
+
+        // Check Diagonals
+        // Diagonal Left 
+        for (int Col = 1; Col < m; Col++)
+        {
             count = 1;
-        }
 
-        //check if there are equal elements in left to right diagonal
-        for (int row = 0, col = 0; row < n - 1 && col < m - 1; row++, col++)
-        {
-            if ((matrix[row, col] == matrix[row + 1, col + 1]))
+            for (int curMod = 1; curMod <= Math.Min(Col, n - 1); curMod++)
             {
-                count++;
+                if (matrix[0 + curMod,Col - curMod] == matrix[0 + (curMod - 1),Col - (curMod - 1)])
+                {
+                    count++;
+                }
             }
-            else
-            {
-                count = 1;
-            }
-        
+
             if (count > maxCount)
             {
                 maxCount = count;
             }
         }
-        count = 1;
 
-
-        //check if there are equal elements in diagonal - right to left 
-        for (int row = 0, col = 0; row < n - 1 && col > 0; row++, col--)
+        for (int Row = 1; Row < n; Row++)
         {
-            if ((matrix[row, col] == matrix[row + 1, col + 1]))
+            count = 1;
+
+            for (int curMod = 1; curMod <= Math.Min(n - 1 - Row - 1, m - 2); curMod++)
             {
-                count++;
+                if (matrix[Row + curMod,(m - 1) - curMod] == matrix[Row + (curMod + 1),(m - 1) - (curMod + 1)])
+                {
+                    count++;
+                }
             }
-            else
-            {
-                count = 1;
-            }
-        
+
             if (count > maxCount)
             {
                 maxCount = count;
             }
         }
-        
-        count = 1;
+
+        // Diagonal Right
+        for (int Row = n - 2;Row >= 0;Row--)
+        {
+            count = 1;
+
+            for (int curMod = 1; curMod <= Math.Min(n - Row - 1, m - 1);curMod++)
+            {
+                if (matrix[Row + curMod,0 + curMod] == matrix[Row + (curMod - 1),0 + (curMod - 1)])
+                {
+                    count++;
+                }
+            }
+
+            if (count > maxCount)
+            {
+                maxCount = count;
+            }
+        }
+
+        // Top Right
+        for (int Row = 1; Row < n - 1; Row++)
+        {
+            count = 1;
+
+            for (int curMod = 1; curMod <= Math.Min(Row - 1, m - 1); curMod++)
+            {
+                if (matrix[Row - curMod,(m - 1) - curMod] == matrix[Row - (curMod - 1),(m - 1) - (curMod - 1)])
+                {
+                    count++;
+                }
+            }
+
+            if (count > maxCount)
+            {
+                maxCount = count;
+            }
+        }
 
         Console.WriteLine(maxCount);
     }
