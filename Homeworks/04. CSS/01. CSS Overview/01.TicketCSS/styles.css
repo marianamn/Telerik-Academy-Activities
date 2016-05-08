@@ -1,0 +1,46 @@
+﻿html{
+    background:#595959;
+    color:#9a9797;
+    font-size:20px;
+    font-family:Arial;
+}
+table, th, td{
+    padding: 10px;
+    margin:0;
+    vertical-align:text-top;
+}
+
+th{
+    
+    font-size:1.4em;
+}
+
+p{
+    margin:0;
+}
+
+a, .yellowLines{
+    text-decoration:none;
+}
+
+.leftCol{
+    font-style:italic;
+    color:#d6d4d4
+}
+
+.yellowLines{
+    color:#fcff70;
+}
+
+.redLines{
+    color:red;
+}
+
+.orangeLines{
+    color:orange;
+}
+
+img{
+    width:20px;
+    height:15px;
+}

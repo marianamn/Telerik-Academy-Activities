@@ -1,0 +1,49 @@
+﻿table, th, td{
+    border-collapse:collapse;
+    padding:5px;
+    margin:0;
+    color:dimgray;
+    font-family:Arial;
+    font-weight:bold;
+}
+
+th{
+    border:1px solid #acaaaa;
+    background-color:#59B802;
+    text-align:left;
+    color: white;
+}
+
+table td + td {
+    border-left:1px solid #acaaaa;
+}
+
+table:last-child{
+    border-bottom:1px solid #acaaaa;
+}
+
+tr:nth-child(2n+1){
+    background-color:#ECECD8;
+}
+
+
+td{
+    width:150px;
+}
+
+img{
+    width:35px;
+    height:25px;
+    vertical-align:middle;
+}
+
+td.image{
+    display:block;
+    float:none;
+}
+
+input[type=checkbox]{
+    width:15px;
+    height:15px;
+    box-shadow: 1px 1px 2px #555 inset;
+}

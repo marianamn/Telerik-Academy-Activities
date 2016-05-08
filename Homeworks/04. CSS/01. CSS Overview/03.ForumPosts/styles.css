@@ -1,0 +1,41 @@
+﻿body {
+    background-color:#A9A9A9;
+    font-size:18px;
+}
+
+body > header{
+    text-align:center;
+    font-size:1.2em;
+}
+
+header{
+    color:white;
+    font-size:1.2em;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+nav a{
+    color:white;
+    font-weight:bold;
+}
+
+a.current{
+    background-color:#D3D3D3;
+}
+
+li:last-child a{
+    text-decoration:underline;
+}
+
+ul{
+    list-style:none;
+    font-size:1.2em;
+}
+
+body > footer{
+    text-align:center;
+}
