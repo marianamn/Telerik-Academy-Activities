@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Windows Calculator</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="calcContainer">Calculator</span>
+            <span class="winButtons"><img src="Images/Calculator%20buttons.png" /></span>
+        </div>
+        <nav id="tabs">
+            <ul>
+                <li>View</li>
+                <li>Edit</li>
+                <li>Help</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div id ="display-container"><span>8854455</span></div>
+        <div id="bits-container">
+            <table>
+                <tr>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                </tr>
+                <tr>
+                    <td colspan="4">63</td>
+                    <td colspan="3">47</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                </tr>
+                <tr>
+                    <td colspan="4">31</td>
+                    <td colspan="3">15</td>
+                    <td>0</td>
+                </tr>
+            </table>
+        </div>
+        <div id="calc-body-container">
+            <table>
+                <tr>
+                    <td colspan="2" rowspan="3">
+                        <form>
+                            <label><input type="radio" name="radio buttons" />Hex</label><br />
+                            <label><input type="radio" name="radio buttons" checked />Dec</label><br />
+                            <label><input type="radio" name="radio buttons" />Oct</label><br />
+                            <label><input type="radio" name="radio buttons" />Bin</label><br />
+                        </form>
+                    </td>
+                    <td></td>
+                    <td class="special-buttons">Mod</td>
+                    <td class="numbers">A</td>
+                    <td>MC</td>
+                    <td>MR</td>
+                    <td>MS</td>
+                    <td>M+</td>
+                    <td>M-</td>
+                </tr>
+                <tr>
+                    <td class="special-buttons">(</td>
+                    <td class="special-buttons">)</td>
+                    <td class="numbers">B</td>
+                    <td class="numbers" class="special-buttons">&larr;</td>
+                    <td id="selected-button">CE</td>
+                    <td class="special-buttons">C</td>
+                    <td class="special-buttons">&plusmn;</td>
+                    <td>&radic;</td>
+                </tr>
+                <tr>
+                    <td class="special-buttons">RoL</td>
+                    <td class="special-buttons">RoR</td>
+                    <td class="numbers">C</td>
+                    <td class="numbers" class="special-numbers">7</td>
+                    <td class="numbers" class="special-numbers">8</td>
+                    <td class="numbers" class="special-numbers">9</td>
+                    <td class="numbers" class="special-buttons">/</td>
+                    <td>%</td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="3">
+                        <form>
+                            <label><input type="radio" name="radio buttons" checked />Qword</label><br />
+                            <label><input type="radio" name="radio buttons" />Dword</label><br />
+                            <label><input type="radio" name="radio buttons" />Word</label><br />
+                            <label><input type="radio" name="radio buttons" />Byte</label><br />
+                        </form>
+                    </td>
+                    <td class="special-buttons">Or</td>
+                    <td class="special-buttons">Xor</td>
+                    <td class="numbers">D</td>
+                    <td class="numbers" class="special-numbers">4</td>
+                    <td class="numbers" class="special-numbers">5</td>
+                    <td class="numbers" class="special-numbers">6</td>
+                    <td class="special-buttons">*</td>
+                    <td>1/x</td>
+                </tr>
+                <tr>
+                    <td class="special-buttons">Lsh</td>
+                    <td class="special-buttons">Rsh</td>
+                    <td class="numbers">E</td>
+                    <td class="numbers" class="special-numbers">1</td>
+                    <td class="numbers" class="special-numbers">2</td>
+                    <td class="numbers" class="special-numbers">3</td>
+                    <td class="special-buttons">-</td>
+                    <td rowspan="2" class="numbers" class="special-buttons">=</td>
+                </tr>
+                <tr>
+                    <td class"special-buttons">Not</td>
+                    <td class="special-buttons">And</td>
+                    <td class="numbers">F</td>
+                    <td colspan="2" class="numbers" id="special-numbers">0</td>
+                    <td>.</td>
+                    <td id="special-buttons">+</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
