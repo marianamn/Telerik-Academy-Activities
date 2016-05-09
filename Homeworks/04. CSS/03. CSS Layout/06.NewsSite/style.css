@@ -4,7 +4,6 @@
     font-family:Arial;
     font-size:14px;
     color:#7A989E;
-
 }
 
 #container{
@@ -13,7 +12,7 @@
     border:1px solid #99BEC7;
     border-radius:5px;
     float:left;
-    width:600px;
+    width:650px;
     background:#1E3741;
 }
 
@@ -85,10 +84,10 @@ section{
 }
 
 iframe {
-    width: 330px;
+    width: 380px;
     height: 310px;
     border: 0;
-    allowfullscreen;
+    allowfullscreen: yes;
 }
 
 .main-header{
