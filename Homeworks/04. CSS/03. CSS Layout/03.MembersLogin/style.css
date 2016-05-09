@@ -1,0 +1,112 @@
+﻿body {
+    font-family:'Bell MT',Arial;
+    font-size: 16px;
+    width:655px;
+    margin:0;
+    padding:0;
+}
+
+form{
+    text-align:right;
+    padding-top:10px;
+}
+
+header{
+    height:50px;
+    padding:5px;
+    font-size:1.5em;
+    font-weight:bold;
+    color:white;
+    background: rgb(59,59,59); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(59,59,59,1) 0%, rgba(59,59,59,1) 36%, rgba(45,45,45,1) 96%, rgba(44,44,44,1) 100%, rgba(55,55,55,1) 100%, rgba(44,44,44,1) 101%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(59,59,59,1)), color-stop(36%,rgba(59,59,59,1)), color-stop(96%,rgba(45,45,45,1)), color-stop(100%,rgba(44,44,44,1)), color-stop(100%,rgba(55,55,55,1)), color-stop(101%,rgba(44,44,44,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(59,59,59,1) 0%,rgba(59,59,59,1) 36%,rgba(45,45,45,1) 96%,rgba(44,44,44,1) 100%,rgba(55,55,55,1) 100%,rgba(44,44,44,1) 101%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(59,59,59,1) 0%,rgba(59,59,59,1) 36%,rgba(45,45,45,1) 96%,rgba(44,44,44,1) 100%,rgba(55,55,55,1) 100%,rgba(44,44,44,1) 101%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(59,59,59,1) 0%,rgba(59,59,59,1) 36%,rgba(45,45,45,1) 96%,rgba(44,44,44,1) 100%,rgba(55,55,55,1) 100%,rgba(44,44,44,1) 101%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(59,59,59,1) 0%,rgba(59,59,59,1) 36%,rgba(45,45,45,1) 96%,rgba(44,44,44,1) 100%,rgba(55,55,55,1) 100%,rgba(44,44,44,1) 101%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b3b3b', endColorstr='#2c2c2c',GradientType=0 ); /* IE6-9 */
+    border-top:1px solid #f1f0f0;
+    border-right:1px solid #f1f0f0;
+    border-left:1px solid #f1f0f0;
+   -webkit-border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+span{
+    background:url('images/PC pic.png') no-repeat;
+    background-size: 38px 48px;
+    padding-left:60px;
+    padding-bottom:70px;
+    padding-top:5px;
+}
+
+span, input{
+    margin:5px;
+}
+
+.login{
+    padding-top:10px;
+    font-size:1em;
+}
+
+input[type=text], input[type=email]{
+    width:150px;
+    height:20px;
+}
+
+.go{
+    width:50px;
+    height:30px;
+    border:1px solid white;
+    border-radius:10px;
+    font-weight:bold;
+    background: rgb(191,7,0); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(191,7,0,1) 0%, rgba(238,128,131,1) 4%, rgba(221,127,127,1) 9%, rgba(237,107,105,1) 13%, rgba(225,100,104,1) 17%, rgba(222,93,97,1) 22%, rgba(224,78,79,1) 30%, rgba(219,53,53,1) 39%, rgba(216,33,29,1) 52%, rgba(202,10,7,1) 57%, rgba(204,2,2,1) 61%, rgba(212,2,3,1) 65%, rgba(231,7,8,1) 83%, rgba(240,10,10,1) 87%, rgba(244,12,12,1) 91%, rgba(244,11,15,1) 96%, rgba(241,18,21,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(191,7,0,1)), color-stop(4%,rgba(238,128,131,1)), color-stop(9%,rgba(221,127,127,1)), color-stop(13%,rgba(237,107,105,1)), color-stop(17%,rgba(225,100,104,1)), color-stop(22%,rgba(222,93,97,1)), color-stop(30%,rgba(224,78,79,1)), color-stop(39%,rgba(219,53,53,1)), color-stop(52%,rgba(216,33,29,1)), color-stop(57%,rgba(202,10,7,1)), color-stop(61%,rgba(204,2,2,1)), color-stop(65%,rgba(212,2,3,1)), color-stop(83%,rgba(231,7,8,1)), color-stop(87%,rgba(240,10,10,1)), color-stop(91%,rgba(244,12,12,1)), color-stop(96%,rgba(244,11,15,1)), color-stop(100%,rgba(241,18,21,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(191,7,0,1) 0%,rgba(238,128,131,1) 4%,rgba(221,127,127,1) 9%,rgba(237,107,105,1) 13%,rgba(225,100,104,1) 17%,rgba(222,93,97,1) 22%,rgba(224,78,79,1) 30%,rgba(219,53,53,1) 39%,rgba(216,33,29,1) 52%,rgba(202,10,7,1) 57%,rgba(204,2,2,1) 61%,rgba(212,2,3,1) 65%,rgba(231,7,8,1) 83%,rgba(240,10,10,1) 87%,rgba(244,12,12,1) 91%,rgba(244,11,15,1) 96%,rgba(241,18,21,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(191,7,0,1) 0%,rgba(238,128,131,1) 4%,rgba(221,127,127,1) 9%,rgba(237,107,105,1) 13%,rgba(225,100,104,1) 17%,rgba(222,93,97,1) 22%,rgba(224,78,79,1) 30%,rgba(219,53,53,1) 39%,rgba(216,33,29,1) 52%,rgba(202,10,7,1) 57%,rgba(204,2,2,1) 61%,rgba(212,2,3,1) 65%,rgba(231,7,8,1) 83%,rgba(240,10,10,1) 87%,rgba(244,12,12,1) 91%,rgba(244,11,15,1) 96%,rgba(241,18,21,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(191,7,0,1) 0%,rgba(238,128,131,1) 4%,rgba(221,127,127,1) 9%,rgba(237,107,105,1) 13%,rgba(225,100,104,1) 17%,rgba(222,93,97,1) 22%,rgba(224,78,79,1) 30%,rgba(219,53,53,1) 39%,rgba(216,33,29,1) 52%,rgba(202,10,7,1) 57%,rgba(204,2,2,1) 61%,rgba(212,2,3,1) 65%,rgba(231,7,8,1) 83%,rgba(240,10,10,1) 87%,rgba(244,12,12,1) 91%,rgba(244,11,15,1) 96%,rgba(241,18,21,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(191,7,0,1) 0%,rgba(238,128,131,1) 4%,rgba(221,127,127,1) 9%,rgba(237,107,105,1) 13%,rgba(225,100,104,1) 17%,rgba(222,93,97,1) 22%,rgba(224,78,79,1) 30%,rgba(219,53,53,1) 39%,rgba(216,33,29,1) 52%,rgba(202,10,7,1) 57%,rgba(204,2,2,1) 61%,rgba(212,2,3,1) 65%,rgba(231,7,8,1) 83%,rgba(240,10,10,1) 87%,rgba(244,12,12,1) 91%,rgba(244,11,15,1) 96%,rgba(241,18,21,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf0700', endColorstr='#f11215',GradientType=0 ); /* IE6-9 */
+    color:white;
+}
+
+input[type=text], input[type=email], .go {
+    display:inline-block;
+}
+
+article {
+    background-color: #3B3B3B;
+    border-bottom: 1px solid #f1f0f0;
+    border-right: 1px solid #f1f0f0;
+    border-left: 1px solid #f1f0f0;
+    -webkit-border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+article p{
+    font-family:Arial;
+    font-size:0.9em;
+    width:95%;
+    color:#A1A1A1;
+    margin-left:15px;
+   
+}
+
+article a{
+    text-decoration:none;
+    color:white;
+}
+
+h1{
+    font-size:1.8em;
+    color:#FBD51A;
+    padding-top:19px;
+    margin-left:15px;
+    margin-top:-1px;
+    margin-bottom:20px;
+}
