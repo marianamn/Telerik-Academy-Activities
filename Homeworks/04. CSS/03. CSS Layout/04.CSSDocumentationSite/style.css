@@ -9,6 +9,10 @@ a{
     color:#434343;
 }
 
+a:hover{
+    font-size: 1.1em;
+}
+
 .container{
     padding:5px;
     margin:5px;
@@ -18,7 +22,7 @@ a{
 }
 
 body nav{
-    padding-top:20px;
+    padding-top:10px;
     padding-left:0;
     float:left;
     width:160px;
@@ -34,7 +38,7 @@ ul{
     margin-top:10px;
 }
 
-#main-menu{
+.main-menu{
     color:#992421;
     font-size:13px;
 }
@@ -53,10 +57,6 @@ nav span img, nav span{
 .first-paragraph{
     font-size:14px;
     font-weight:bold;
-}
-
-.first-paragraph a{
-    padding-left:110px;
 }
 
 body nav a{
