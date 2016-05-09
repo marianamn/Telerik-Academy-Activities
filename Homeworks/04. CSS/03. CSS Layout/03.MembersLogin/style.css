@@ -34,15 +34,15 @@ header{
     border-top-right-radius: 10px;
 }
 
-span{
-    background:url('images/PC pic.png') no-repeat;
+label{
+    background:url('images/pc.png') no-repeat;
     background-size: 38px 48px;
     padding-left:60px;
     padding-bottom:70px;
     padding-top:5px;
 }
 
-span, input{
+label, input{
     margin:5px;
 }
 
