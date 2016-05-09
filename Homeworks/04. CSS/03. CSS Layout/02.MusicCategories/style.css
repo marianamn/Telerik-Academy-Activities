@@ -1,5 +1,5 @@
 ﻿body {
-    width:500px; 
+    width:550px;
     margin:0;
     padding:0;
     color:#686868;
@@ -8,7 +8,9 @@
 }
 
 header {
-    padding: 15px;
+    padding-left: 27px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-size: 1.5em;
     background-color: #EEEEEE;
     border-top: 1px solid #f1f0f0;
@@ -29,8 +31,8 @@ article{
     margin:auto;
     border:1px solid #999999;
     background:white no-repeat;
-    width:460px;
-    height:120px;
+    width:470px;
+    height:130px;
 }
 
 article:nth-child(2n+2){
@@ -39,17 +41,17 @@ article:nth-child(2n+2){
 
 article:last-child {
     margin-top:30px;
-    margin-bottom:5px;
+    margin-bottom:10px;
 }
 
 .button1{
-    background:url('images/Listen button.png') no-repeat;
+    background:url('images/listen_button.png') no-repeat;
     width:75px;
     height:27px;
 }
 
 .button2{
-    background:url('images/Add button.png') no-repeat;
+    background:url('images/add_button.png') no-repeat;
     width:50px;
     height:27px;
 }
@@ -62,7 +64,7 @@ article:last-child {
 }
 
 img{
-    width:170px;
+    width:180px;
     height:110px;
     float:left;
     margin-right:10px;
@@ -88,7 +90,7 @@ img span{
 }
 
 section{
-     border-bottom: 1px solid #f1f0f0;
+    border-bottom: 1px solid #f1f0f0;
     border-left: 1px solid #f1f0f0;
     border-right: 1px solid #f1f0f0;
     -webkit-border-bottom-right-radius: 10px;

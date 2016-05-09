@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa5392c-70a4-4e5e-bef4-7b1200e1e831" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../02. CSS Presentation/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../02. CSS Presentation/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/02.MusicCategories/index.html" afterPath="$PROJECT_DIR$/02.MusicCategories/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/02.MusicCategories/style.css" afterPath="$PROJECT_DIR$/02.MusicCategories/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/02.MusicCategories/images/Add button.png" afterPath="$PROJECT_DIR$/02.MusicCategories/images/add_button.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/02.MusicCategories/images/Listen button.png" afterPath="$PROJECT_DIR$/02.MusicCategories/images/listen_Button.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/02.MusicCategories/images/Music Categories-pic 1.jpg" afterPath="$PROJECT_DIR$/02.MusicCategories/images/category_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/02.MusicCategories/images/Music Categories-pic 2.jpg" afterPath="$PROJECT_DIR$/02.MusicCategories/images/category_2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/02.MusicCategories/images/Music Categories-pic 3.jpg" afterPath="$PROJECT_DIR$/02.MusicCategories/images/category_3.jpg" />
     </list>
     <ignored path="03. CSS Layout.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,11 +30,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01.TreeView/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+            <state relative-caret-position="572">
+              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/02.MusicCategories/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02.MusicCategories/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -44,6 +70,8 @@
       <list>
         <option value="$PROJECT_DIR$/01.TreeView/style.css" />
         <option value="$PROJECT_DIR$/01.TreeView/index.html" />
+        <option value="$PROJECT_DIR$/02.MusicCategories/index.html" />
+        <option value="$PROJECT_DIR$/02.MusicCategories/style.css" />
       </list>
     </option>
   </component>
@@ -237,6 +265,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="02.MusicCategories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="03. CSS Layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="03. CSS Layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="01.TreeView" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -319,18 +365,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1462821301946</updated>
-      <workItem from="1462821303524" duration="959000" />
+      <workItem from="1462821303524" duration="2542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="959000" />
+    <option name="totallyTimeSpent" value="2542000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -356,7 +402,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/02.MusicCategories/images/Add button.png">
+    <entry file="file://$PROJECT_DIR$/02.MusicCategories/images/add_button.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -371,17 +417,17 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02.MusicCategories/images/Music Categories-pic 1.jpg">
+    <entry file="file://$PROJECT_DIR$/02.MusicCategories/images/category_1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02.MusicCategories/images/Music Categories-pic 2.jpg">
+    <entry file="file://$PROJECT_DIR$/02.MusicCategories/images/category_2.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02.MusicCategories/images/Music Categories-pic 3.jpg">
+    <entry file="file://$PROJECT_DIR$/02.MusicCategories/images/category_3.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -416,8 +462,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01.TreeView/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        <state relative-caret-position="572">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.MusicCategories/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.MusicCategories/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding />
         </state>
       </provider>
