@@ -10,6 +10,12 @@ class NFactorial
         BigInteger[] array = new BigInteger[101];
 
         array = NFactorialMethod(array);
+        if(n == 0)
+        {
+            Console.WriteLine(0);
+        }
+        else
+        {
         for (int i = 1; i < array.Length; i++)
         {
             if (i == n)
@@ -17,6 +23,7 @@ class NFactorial
                 Console.WriteLine(array[i]);
                 break;
             }
+        }
         }
     }
 
@@ -33,4 +40,3 @@ class NFactorial
         return array;
     }
 }
-
