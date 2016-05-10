@@ -6,7 +6,7 @@
     {
         public static void Main()
         {
-            long n = int.Parse(Console.ReadLine());
+            long n = long.Parse(Console.ReadLine());
 
             string result = ConvertDecimalToBinary(n);
 
