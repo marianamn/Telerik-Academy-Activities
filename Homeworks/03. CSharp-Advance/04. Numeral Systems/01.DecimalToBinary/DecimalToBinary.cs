@@ -6,22 +6,28 @@
     {
         public static void Main()
         {
-            int n = int.Parse(Console.ReadLine());
+            long n = int.Parse(Console.ReadLine());
 
             string result = ConvertDecimalToBinary(n);
 
             Console.WriteLine(result);
         }
 
-        private static string ConvertDecimalToBinary(int number)
+        private static string ConvertDecimalToBinary(long number)
         {
             string result = string.Empty;
 
-            while (number > 0)
+            if (number == 0)
             {
-                int remainder = number % 2;
-                number /= 2;
-                result = remainder.ToString() + result;
+                result = "0";
+            }
+            else
+            {
+                while (number > 0)
+                {
+                    result = number % 2 + result;
+                    number /= 2;
+                }
             }
 
             return result;
