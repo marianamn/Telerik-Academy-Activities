@@ -46,9 +46,9 @@ class IntegerCalculations
         return result;
     }
 
-    static int Product(int[] array)
+    static long Product(int[] array)
     {
-        int result = 1;
+        long result = 1;
         for (int i = 0; i < array.Length; i++)
         {
             result = result * array[i];
