@@ -35,11 +35,12 @@ class NumberAsArray
         int maxLenght = Math.Max(firstArray.Length, secondArray.Length);
         int[] sums = new int[maxLenght];
         int sum = 0;
-
+        int oneInMind = 0;
+        
         for (int i = 0; i < Math.Min(firstArray.Length, secondArray.Length); i++)
         {
-            sum = firstArray[i] + secondArray[i];
-
+            sum = firstArray[i] + secondArray[i] + oneInMind;
+            
             if (sum / 10 == 0)
             {
                 sums[i] = sum;
@@ -48,6 +49,8 @@ class NumberAsArray
             {
                 sums[i] = sum % 10;
             }
+            
+            oneInMind = sum / 10;
         }
 
         if (firstArray.Length > secondArray.Length)
