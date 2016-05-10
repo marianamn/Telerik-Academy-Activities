@@ -10,6 +10,7 @@ class NFactorial
         BigInteger[] array = new BigInteger[101];
 
         array = NFactorialMethod(array);
+
         if(n == 0)
         {
             Console.WriteLine(0);
