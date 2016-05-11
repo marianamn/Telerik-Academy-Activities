@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _03.DayOfWeek
+﻿namespace _03.DayOfWeek
 {
-    class DayOfWeek
+    using System;
+
+    public class DayOfWeek
     {
-        static void Main(string[] args)
+        public static void Main()
         {
+            DateTime today = DateTime.Today;
+
+            Console.WriteLine("Today is {0}.", today.DayOfWeek);
         }
     }
 }
