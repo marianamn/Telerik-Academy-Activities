@@ -4,38 +4,55 @@ class OneSystemToAnyOther
 {
     static void Main(string[] args)
     {
-        int baseToConvertFrom = int.Parse(Console.ReadLine());
 
+        short baseToConvertFrom = short.Parse(Console.ReadLine());
         string number = Console.ReadLine();
+        short baseToConvertTo = short.Parse(Console.ReadLine());
 
-        int baseToConvertTo = int.Parse(Console.ReadLine());
+        string decimalNumber = ConvertToDecimal(number, baseToConvertFrom);
 
-        long decimalNumber = ConvertToDecimal(number, baseToConvertFrom);
-
-        Console.WriteLine(ConvertFromDecimal(decimalNumber, baseToConvertTo));
+        string result = ConvertFromDecimal(decimalNumber, baseToConvertTo);
+        Console.WriteLine(result.ToUpper().TrimStart('0'));
     }
 
-    static long ConvertToDecimal(string number, int baseToConvertFrom)
+    static long Power(long number, long power)
     {
-        long result = 0;
+        long result = 1;
 
-        for (int i = number.Length - 1; i >= 0; i--)
+        for (int i = 0; i < power; i++)
         {
-            if (char.IsDigit(number[i]))
-            {
-                result += long.Parse(number[i].ToString()) * (long)Math.Pow(baseToConvertFrom, number.Length - 1 - i);
-            }
-            else
-            {
-                result += (number[i] - 'A' + 10) * (long)Math.Pow(baseToConvertFrom, number.Length - 1 - i);
-            }
+            result *= number;
         }
 
         return result;
     }
 
-    static string ConvertFromDecimal(long number, int baseToConvertTo)
+    static string ConvertToDecimal(string number, short baseToConvertFrom)
     {
+        long result = 0;
+
+        for (int i = number.Length - 1; i >= 0; i--)
+        {
+            long digit = 0;
+
+            if (char.IsDigit(number[i]))
+            {
+                digit += long.Parse(number[i].ToString());
+            }
+            else
+            {
+                digit += (number[i] - 'A' + 10);
+            }
+
+            result += digit * Power(baseToConvertFrom, number.Length - i - 1);
+        }
+
+        return result.ToString();
+    }
+
+    static string ConvertFromDecimal(string numb, short baseToConvertTo)
+    {
+        long number = long.Parse(numb);
         string result = string.Empty;
 
         if (number == 0)
@@ -54,6 +71,7 @@ class OneSystemToAnyOther
                 {
                     result = (char)(number % baseToConvertTo + 'A' - 10) + result;
                 }
+
                 number /= baseToConvertTo;
             }
         }
