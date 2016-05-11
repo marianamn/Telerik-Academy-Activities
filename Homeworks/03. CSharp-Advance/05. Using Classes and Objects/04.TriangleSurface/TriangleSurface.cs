@@ -1,15 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _04.TriangleSurface
+﻿namespace _04.TriangleSurface
 {
-    class TriangleSurface
+    using System;
+
+    public class TriangleSurface
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            double a = double.Parse(Console.ReadLine());
+            double h = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("{0:F2}", SurfaceBySideAndAltitudeToIt(a, h));
+        }
+
+        static double SurfaceBySideAndAltitudeToIt(double a, double h)
+        {
+            double surface = (a * h) / 2;
+            return surface;
         }
     }
 }
