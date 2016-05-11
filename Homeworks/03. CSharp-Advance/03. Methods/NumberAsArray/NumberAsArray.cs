@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 class NumberAsArray
 {
@@ -11,86 +14,97 @@ class NumberAsArray
         string[] firstLine = Console.ReadLine().Split(' ');
         string[] secondLine = Console.ReadLine().Split(' ');
 
-        int[] firstArray = new int[n];
+        byte[] firstArray = new byte[n];
 
         for (int i = 0; i < n; i++)
         {
-            firstArray[i] = int.Parse(firstLine[i]);
+            firstArray[i] = byte.Parse(firstLine[i]);
         }
 
-        int[] secondArray = new int[m];
+        byte[] secondArray = new byte[m];
 
         for (int i = 0; i < m; i++)
         {
-            secondArray[i] = int.Parse(secondLine[i]);
+            secondArray[i] = byte.Parse(secondLine[i]);
         }
 
-        int[] sumArray = SumArraysDigits(firstArray, secondArray);
+        // second way of parsing Data - using Linq
+        // byte[] firstArray = Console.ReadLine().Split(' ').Select(byte.Parse).ToArray();
+        // byte[] secondArray = Console.ReadLine().Split(' ').Select(byte.Parse).ToArray();
 
-        Console.WriteLine(string.Join(" ", sumArray).TrimEnd('0'));
+        string totals = SumArrays(firstArray, secondArray);
+        Console.WriteLine(totals);
     }
 
-    private static int[] SumArraysDigits(int[] firstArray, int[] secondArray)
+    static string SumArrays(byte[] firstArray, byte[] secondArray)
     {
-        int maxLenght = Math.Min(firstArray.Length, secondArray.Length);
-        int[] sums = new int[maxLenght+1];
-        int sum = 0;
-        int oneInMind = 0;
-
-        for (int i = 0; i < maxLenght; i++)
-        {
-            sum = firstArray[i] + secondArray[i] + oneInMind;
-
-            if (sum / 10 == 0)
-            {
-                sums[i] = sum;
-            }
-            else
-            {
-                sums[i] = sum % 10;
-            }
-
-            oneInMind = sum / 10;
-
-            if (i == maxLenght - 1 && (firstArray[maxLenght-1] + secondArray[maxLenght-1]) / 10 != 0)
-            {
-                sums[maxLenght] = 1;
-            }
-        }
+        List<byte> maxArray = new List<byte>();
+        List<byte> minArray = new List<byte>();
 
         if (firstArray.Length > secondArray.Length)
         {
-            for (int i = secondArray.Length; i < firstArray.Length; i++)
-            {
-                int prevSum = secondArray[secondArray.Length - 1] + firstArray[secondArray.Length - 1];
-
-                if (prevSum / 10 != 0)
-                {
-                    sums[i] = firstArray[i] + 1;
-                }
-                else
-                {
-                    sums[i] = firstArray[i];
-                }
-            }
+            maxArray.AddRange(firstArray);
+            minArray.AddRange(secondArray);
         }
         else
         {
-            for (int i = firstArray.Length; i < secondArray.Length; i++)
-            {
-                int prevSum2 = firstArray[firstArray.Length - 1] + secondArray[firstArray.Length - 1];
+            maxArray.AddRange(secondArray);
+            minArray.AddRange(firstArray);
+        }
 
-                if (prevSum2 / 10 != 0)
-                {
-                    sums[i] = secondArray[i] + 1;
-                }
-                else
-                {
-                    sums[i] = secondArray[i];
-                }
+        int minLength = minArray.Count;
+        int maxLength = maxArray.Count;
+        int addition = 0;
+        int sum = 0;
+        var result = new StringBuilder();
+
+        for (int i = 0; i < minLength; i++)
+        {
+            sum = minArray[i] + maxArray[i] + addition;
+
+            if (sum >= 10)
+            {
+                addition = 1;
+                sum = sum % 10;
+                result.Append(sum);
+            }
+            else
+            {
+                result.Append(sum);
+                addition = 0;
             }
         }
 
-        return sums;
+        for (int j = minLength; j < maxLength; j++)
+        {
+            sum = maxArray[j] + addition;
+            if (sum >= 10)
+            {
+                addition = 1;
+                sum = sum % 10;
+                result.Append(sum);
+            }
+            else
+            {
+                result.Append(sum);
+                addition = 0;
+            }
+        }
+
+        if (addition == 1)
+        {
+            result.Append(1);
+        }
+
+        char[] reversed = (result.ToString()).ToCharArray();
+        result.Clear();
+
+        for (int i = 0; i < reversed.Length; i++)
+        {
+            result.Append(reversed[i]);
+            result.Append(" ");
+        }
+
+        return result.ToString();
     }
 }
