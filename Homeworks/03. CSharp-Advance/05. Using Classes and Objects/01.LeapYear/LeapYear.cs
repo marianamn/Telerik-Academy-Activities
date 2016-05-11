@@ -1,15 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _01.LeapYear
+﻿namespace _01.LeapYear
 {
-    class LeapYear
+    using System;
+
+    public class LeapYear
     {
-        static void Main(string[] args)
+        public static void Main()
         {
+            int year = int.Parse(Console.ReadLine());
+
+            bool isLeap = DateTime.IsLeapYear(year);
+
+            if (isLeap)
+            {
+                Console.WriteLine("Leap");
+            }
+            else
+            {
+                Console.WriteLine("Common");
+            }
         }
     }
 }
