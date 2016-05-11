@@ -1,15 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _02.RandomNumbers
+﻿namespace _02.RandomNumbers
 {
-    class RandomNumbers
+    using System;
+
+    public class RandomNumbers
     {
-        static void Main(string[] args)
+        public static void Main()
         {
+            Random generator = new Random();
+
+            for (int i = 1; i < 11; i++)
+            {
+                Console.WriteLine("Random number{0} = {1}", i, generator.Next(100, 201));
+            }
         }
     }
 }
