@@ -10,7 +10,7 @@ namespace _08.SumIntegers
     {
         static void Main(string[] args)
         {
-            string inputString = "43 68 9 23 318";
+            string inputString = Console.ReadLine();
             string[] input = inputString.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
             int sum = 0;
@@ -23,7 +23,7 @@ namespace _08.SumIntegers
                 sum = sum + numbers[i];
             }
 
-            Console.WriteLine("Sum={0}", sum);
+            Console.WriteLine(sum);
         }
     }
 }
