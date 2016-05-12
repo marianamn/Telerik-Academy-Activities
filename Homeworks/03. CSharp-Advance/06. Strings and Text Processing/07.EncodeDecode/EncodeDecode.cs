@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _07.EncodeDecode
 {
-    class Program
+    class EncodeDecode
     {
         static void Main(string[] args)
         {

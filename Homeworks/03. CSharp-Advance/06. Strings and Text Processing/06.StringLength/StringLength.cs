@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _06.StringLength
 {
-    class Program
+    class StringLength
     {
         static void Main(string[] args)
         {

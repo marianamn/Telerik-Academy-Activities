@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _12.ParseURL
 {
-    class Program
+    class ParseURL
     {
         static void Main(string[] args)
         {

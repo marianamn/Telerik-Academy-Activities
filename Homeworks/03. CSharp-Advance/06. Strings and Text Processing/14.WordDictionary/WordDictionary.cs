@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _14.WordDictionary
 {
-    class Program
+    class WordDictionary
     {
         static void Main(string[] args)
         {

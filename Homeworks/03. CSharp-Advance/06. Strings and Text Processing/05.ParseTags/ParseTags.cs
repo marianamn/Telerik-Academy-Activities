@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _05.ParseTags
 {
-    class Program
+    class ParseTags
     {
         static void Main(string[] args)
         {

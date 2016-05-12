@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _08.ExtractSentences
 {
-    class Program
+    class ExtractSentences
     {
         static void Main(string[] args)
         {

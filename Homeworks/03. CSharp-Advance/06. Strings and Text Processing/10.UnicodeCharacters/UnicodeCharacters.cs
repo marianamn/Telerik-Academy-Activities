@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _10.UnicodeCharacters
 {
-    class Program
+    class UnicodeCharacters
     {
         static void Main(string[] args)
         {

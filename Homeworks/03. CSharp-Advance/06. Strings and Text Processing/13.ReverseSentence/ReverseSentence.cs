@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _13.ReverseSentence
 {
-    class Program
+    class ReverseSentence
     {
         static void Main(string[] args)
         {

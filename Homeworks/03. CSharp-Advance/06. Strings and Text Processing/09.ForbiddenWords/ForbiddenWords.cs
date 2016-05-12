@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _09.ForbiddenWords
 {
-    class Program
+    class ForbiddenWords
     {
         static void Main(string[] args)
         {

@@ -1,15 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _02.ReverseString
+﻿namespace _02.ReverseString
 {
-    class Program
+    using System;
+    using System.Linq;
+
+    public class ReverseString
     {
-        static void Main(string[] args)
+        public static void Main()
         {
+            string text = Console.ReadLine();
+            string reversedText = new string(text.Reverse().ToArray());
+
+            Console.WriteLine(Convert.ToString(reversedText));
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _15.ReplaceTags
 {
-    class Program
+    class ReplaceTags
     {
         static void Main(string[] args)
         {
