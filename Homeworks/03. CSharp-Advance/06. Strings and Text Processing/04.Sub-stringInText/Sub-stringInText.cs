@@ -1,15 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _04.Sub_stringInText
+﻿namespace _04.Sub_stringInText
 {
-    class Program
+    using System;
+
+    public class Sub_stringInText
     {
-        static void Main(string[] args)
+        public static void Main()
         {
+            string searchText = Console.ReadLine();
+            string input = Console.ReadLine();
+
+            string text = input.ToLower();
+            int count = 0;
+
+            for (int i = 0; i < text.Length - searchText.Length; i++)
+            {
+                if (text.Substring(i, searchText.Length) == searchText)
+                {
+                    count++;
+                }
+            }
+
+            Console.WriteLine(count);
         }
     }
 }
