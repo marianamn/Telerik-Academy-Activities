@@ -1,15 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _06.StringLength
+﻿namespace _06.StringLength
 {
-    class StringLength
+    using System;
+
+    public class StringLength
     {
-        static void Main(string[] args)
+        private const int LengthNeeded = 20;
+        private const char CharToAdd = '*';
+
+        public static void Main()
         {
+            string text = Console.ReadLine();
+            int length = text.Length;
+
+            int differenceInlength = LengthNeeded - length;
+
+            if (differenceInlength > 0 )
+            {
+                Console.WriteLine(text.PadRight(LengthNeeded, CharToAdd));
+            }
+            else
+            {
+                Console.WriteLine(text);
+            }
         }
     }
 }
