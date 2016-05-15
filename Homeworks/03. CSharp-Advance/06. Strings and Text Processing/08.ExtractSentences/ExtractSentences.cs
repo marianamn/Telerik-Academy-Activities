@@ -12,6 +12,7 @@
             string[] text = Console.ReadLine().Split(new[] { '.', '!', '?'}, StringSplitOptions.RemoveEmptyEntries);
 
             List<string> sentences = new List<string>();
+            char[] signs = { '.', '!', '?' };
 
             for (int i = 0; i < text.Length; i++)
             {
