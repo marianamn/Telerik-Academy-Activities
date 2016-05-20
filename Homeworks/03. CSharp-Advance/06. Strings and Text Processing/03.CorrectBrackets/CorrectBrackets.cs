@@ -1,10 +1,6 @@
 ﻿namespace _03.CorrectBrackets
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public class CorrectBrackets
     {
@@ -45,7 +41,7 @@
             }
             else
             {
-                Console.WriteLine("Incorect");
+                Console.WriteLine("Incorrect");
             }
 
         }
