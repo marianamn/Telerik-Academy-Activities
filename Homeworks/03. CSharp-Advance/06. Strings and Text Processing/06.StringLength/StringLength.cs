@@ -10,11 +10,15 @@
         public static void Main()
         {
             string text = Console.ReadLine();
+            text = text.Replace("\n", string.Empty);
+            text = text.Replace("\\", string.Empty);
+            text = text.Replace("\r", string.Empty);
+
             int length = text.Length;
 
             int differenceInlength = LengthNeeded - length;
 
-            if (differenceInlength > 0 )
+            if (differenceInlength > 0)
             {
                 Console.WriteLine(text.PadRight(LengthNeeded, CharToAdd));
             }
