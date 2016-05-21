@@ -2,27 +2,30 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
 
     public class ExtractSentences
     {
         public static void Main()
         {
             string word = Console.ReadLine();
-            string[] text = Console.ReadLine().Split(new[] { '.', '!', '?'}, StringSplitOptions.RemoveEmptyEntries);
+
+            string[] text = Console.ReadLine().Split(new[] { '.' }, StringSplitOptions.RemoveEmptyEntries);
 
             List<string> sentences = new List<string>();
             char[] signs = { '.', '!', '?' };
 
             for (int i = 0; i < text.Length; i++)
             {
-                string[] words = text[i].Trim().Split(new char[] { ',', ' ', ':', '-', '(', ')', '/', '*'}, StringSplitOptions.RemoveEmptyEntries);
+                string[] words = text[i].Trim().Split(new char[] { ',', ' ', ':', '-', '(', ')', '/', '*', '\'', ';', '\n', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
 
-                if (words.Contains(word))
+                for (int j = 0; j < words.Length; j++)
                 {
-                    sentences.Add(text[i]);
-                    // TODO: if the sentence end is not a dot?
-                    sentences.Add(".");
+                    if (word.Equals(words[j], StringComparison.InvariantCultureIgnoreCase))
+                    {
+                        sentences.Add(text[i]);
+                        sentences.Add(".");
+                        break;
+                    }
                 }
             }
 
