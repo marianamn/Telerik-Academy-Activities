@@ -2,6 +2,7 @@
 {
     using System;
     using System.Text;
+    using System.Text.RegularExpressions;
 
     public class ParseTags
     {
@@ -9,34 +10,28 @@
         {
             string text = Console.ReadLine();
 
-            string openTag = "<upcase>";
-            string closeTag = "</upcase>";
+            var replacedText = Regex.Replace(text, @"<upcase>(.*?)</upcase>", m => m.ToString().ToUpper());
+            replacedText = replacedText.Replace("<UPCASE>", "");
+            replacedText = replacedText.Replace("</UPCASE>", "");
 
-            int startIndex = text.IndexOf(openTag);
-            int endIndex = text.IndexOf(closeTag);
+            Console.WriteLine(replacedText);
 
-            StringBuilder result = new StringBuilder();
-
-            for (int i = 0; i < text.Length; i++)
-            {
-                if (i < text.Length - openTag.Length && text.Substring(i, openTag.Length) == openTag)
-                {
-                    string textToUpper = text.Substring(startIndex + openTag.Length, endIndex - startIndex - openTag.Length).ToUpper();
-                    result.Append(textToUpper);
-
-                    startIndex = text.IndexOf(openTag, startIndex + 1);
-                    endIndex = text.IndexOf(closeTag, endIndex + 1);
-
-                    i += openTag.Length + textToUpper.Length + closeTag.Length;
-                }
-
-                result.Append(text[i]);
-            }
-
-            result = result.Replace(openTag, "");
-            result = result.Replace(closeTag, "");
-
-            Console.WriteLine(result);
+            
+            //string openTag = "<upcase>";
+            //string closeTag = "</upcase>";
+            //StringBuilder result = new StringBuilder();
+            //
+            //for (int i = 0; i < text.Length - openTag.Length; i++)
+            //{
+            //    string sub = text.Substring(text.IndexOf(openTag, i) + openTag.Length, 
+            //        text.IndexOf(closeTag, i) - text.IndexOf(openTag, i) - closeTag.Length).ToUpper();
+            //    Console.WriteLine(sub);
+            //}
+            //
+            //text = text.Replace(openTag, "");
+            //text = text.Replace(closeTag, "");
+            //
+            //Console.WriteLine(text);
         }
     }
 }
