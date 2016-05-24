@@ -1,0 +1,13 @@
+list: 3
+text: 2
+another: 2
+word: 2
+is: 1
+in: 0
+each: 0
+times: 0
+many: 0
+how: 0
+count: 0
+words: 0
+of: 0

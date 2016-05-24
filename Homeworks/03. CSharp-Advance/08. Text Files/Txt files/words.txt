@@ -1,0 +1,13 @@
+list
+of
+words
+count
+how
+many
+times
+each
+word
+is
+in
+another
+text

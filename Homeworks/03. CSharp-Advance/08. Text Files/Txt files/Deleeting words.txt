@@ -1,0 +1,4 @@
+Some text for testing
+purposes. Words that are
+in another text should be 
+deleted in this one.
