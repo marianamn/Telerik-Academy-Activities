@@ -9,7 +9,7 @@ class OneSystemToAnyOther
         string number = Console.ReadLine();
         short baseToConvertTo = short.Parse(Console.ReadLine());
 
-        string decimalNumber = ConvertToDecimal(number, baseToConvertFrom);
+        string decimalNumber = ConvertToSystem(number, baseToConvertFrom);
 
         string result = ConvertFromDecimal(decimalNumber, baseToConvertTo);
         Console.WriteLine(result.ToUpper().TrimStart('0'));
@@ -27,7 +27,7 @@ class OneSystemToAnyOther
         return result;
     }
 
-    static string ConvertToDecimal(string number, short baseToConvertFrom)
+    static string ConvertToSystem(string number, short baseToConvertFrom)
     {
         long result = 0;
 
