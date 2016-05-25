@@ -6,22 +6,26 @@
     {
         public static void Main()
         {
+            string input = Console.ReadLine();
             try
             {
-                int number = int.Parse(Console.ReadLine());
+                int x;
+                bool valid = Int32.TryParse(input, out x);
 
-                double sqr = Math.Sqrt(number);
+                int number = int.Parse(input);
 
-                if (number < 0)
+                if (number < 0 || !valid)
                 {
                     Console.WriteLine("Invalid number");
                 }
                 else
                 {
+                    double sqr = Math.Sqrt(number);
+
                     Console.WriteLine("{0:F3}", sqr);
                 }
             }
-            catch (Exception ex)
+            catch (FormatException)
             {
                 Console.WriteLine("Invalid number");
             }
