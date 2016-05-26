@@ -7,14 +7,12 @@
         public static void Main()
         {
             string input = Console.ReadLine();
+
             try
             {
-                int x;
-                bool valid = Int32.TryParse(input, out x);
+                double number = double.Parse(input);
 
-                int number = int.Parse(input);
-
-                if (number < 0 || !valid)
+                if (number < 0)
                 {
                     Console.WriteLine("Invalid number");
                 }

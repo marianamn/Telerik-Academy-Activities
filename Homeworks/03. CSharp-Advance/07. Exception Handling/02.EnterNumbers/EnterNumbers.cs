@@ -1,54 +1,55 @@
 ﻿namespace _02.EnterNumbers
 {
     using System;
+    using System.Linq;
 
     public class EnterNumbers
     {
+        private const int Length = 10;
+
         public static void Main()
         {
-            int n = 10;
-            int[] numbers = ReadNumber(0, n);
+            double[] numbers = ReadNumber(1, 100);
 
             bool increasing = false;
 
-            for (int i = 0; i < n - 1; i++)
+            try
             {
-                if (numbers[i] >= numbers[i + 1])
+                for (int i = 0; i < Length - 1; i++)
                 {
-                    increasing = false;
-                    break;
+                    if (numbers[i] < numbers[i + 1])
+                    {
+                        increasing = true;
+                    }
+                    else
+                    {
+                        increasing = false;
+                        break;
+                    }
+                }
+
+                if (!increasing || numbers.Any(x => x < 0) || numbers.Any(x => x > 100))
+                {
+                    Console.WriteLine("Exception");
                 }
                 else
                 {
-                    increasing = true;
+                    Console.WriteLine("1 < {0} < 100", string.Join(" < ", numbers));
                 }
             }
-
-            if (increasing)
-            {
-                Console.WriteLine(string.Join(" < ", numbers));
-            }
-            else
+            catch (Exception)
             {
                 Console.WriteLine("Exception");
             }
         }
 
-        private static int[] ReadNumber(int v, int n)
+        private static double[] ReadNumber(int start, int end)
         {
-            int[] numbers = new int[n];
+            double[] numbers = new double[Length];
 
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < Length; i++)
             {
-                try
-                {
-                    numbers[i] = int.Parse(Console.ReadLine());
-                }
-                catch (Exception)
-                {
-
-                    Console.WriteLine("Exception");
-                }
+                numbers[i] = double.Parse(Console.ReadLine());
             }
 
             return numbers;
