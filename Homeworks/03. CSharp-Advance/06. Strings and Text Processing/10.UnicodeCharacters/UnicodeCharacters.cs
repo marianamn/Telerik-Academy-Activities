@@ -1,12 +1,14 @@
 ﻿namespace _10.UnicodeCharacters
 {
     using System;
-
+    using System.Globalization;
+    using System.Text;
     class UnicodeCharacters
     {
         static void Main(string[] args)
         {
-            string text = Console.ReadLine();
+            string input = Console.ReadLine();
+            string text = Convert.ToString(input, CultureInfo.InvariantCulture);
 
 
             for (int i = 0; i < text.Length; i++)
