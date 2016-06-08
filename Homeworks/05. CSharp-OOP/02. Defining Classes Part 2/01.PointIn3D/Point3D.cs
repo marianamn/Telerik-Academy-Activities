@@ -23,51 +23,27 @@
         
         public Point3D Center                             // add in problem 2
         {
-            get
-            {
-                return CenterO;
-            }
+            get { return CenterO; }
         }
 
         public double X
         {
-            get
-            {
-                return this.x;
-            }
-
-            set
-            {
-                this.x = value;
-            }
+            get { return this.x; }
+            set { this.x = value; }
         }
 
         public double Y
         {
-            get
-            {
-                return this.y;
-            }
-
-            set
-            {
-                this.y = value;
-            }
+            get { return this.y; }
+            set { this.y = value; }
         }
 
         public double Z
         {
-            get
-            {
-                return this.z;
-            }
-
-            set
-            {
-                this.z = value;
-            }
+            get { return this.z; }
+            set { this.z = value; }
         }
-        
+
         public override string ToString()
         {
             return string.Format(

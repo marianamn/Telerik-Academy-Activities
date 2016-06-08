@@ -1,0 +1,16 @@
+Point Coordinates: 
+x: 2.00 
+y: 3.00 
+z: 3.40
+Point Coordinates: 
+x: 3.00 
+y: 4.00 
+z: 5.00
+Point Coordinates: 
+x: 1.40 
+y: -2.00 
+z: 0.00
+Point Coordinates: 
+x: 3.00 
+y: 4.00 
+z: 5.00

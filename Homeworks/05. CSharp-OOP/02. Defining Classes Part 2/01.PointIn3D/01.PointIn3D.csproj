@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>_01.PointIn3D</RootNamespace>
-    <AssemblyName>_01.PointIn3D</AssemblyName>
+    <AssemblyName>01.PointIn3D</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Distance.cs" />
+    <Compile Include="Path.cs" />
+    <Compile Include="PathStorage.cs" />
+    <Compile Include="Point3D.cs" />
+    <Compile Include="PointIn3DStart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
