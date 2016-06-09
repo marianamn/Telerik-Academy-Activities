@@ -14,7 +14,7 @@
 
         public GenericList(int capacity)
         {
-            this.elements = new T[this.capacity];
+            this.elements = new T[capacity];
             this.Capacity = capacity;
         }
 
@@ -45,7 +45,6 @@
                 }
 
                 T result = this.elements[index];
-
                 return result;
             }
         }
@@ -71,16 +70,13 @@
             }
 
             T result = this.elements[index];
-
             for (int i = index; i < this.count; i++)
             {
                 this.elements[i] = this.elements[i + 1];
             }
 
             this.elements[this.count - 1] = new T();
-
             this.count--;
-
             return result;
         }
 
@@ -103,7 +99,6 @@
             }
 
             this.count++;
-
             for (int i = this.count; i >= index; i--)
             {
                 this.elements[i] = this.elements[i - 1];
@@ -133,7 +128,8 @@
 
             return -1;  // if not equals
         }
-        
+
+        // ToString() 
         public override string ToString()
         {
             StringBuilder result = new StringBuilder();
@@ -141,7 +137,6 @@
             for (int i = 0; i < this.count; i++)
             {
                 result.Append(this.elements[i]);
-
                 if (i < this.count - 1)
                 {
                     result.Append(", ");
