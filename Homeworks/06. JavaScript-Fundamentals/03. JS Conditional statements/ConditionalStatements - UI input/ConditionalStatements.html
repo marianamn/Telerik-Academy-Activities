@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Conditional Statements</title>
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <link rel="stylesheet" href="Styles/js-console.css" />
+</head>
+<body>
+    <div id="container">
+        <h1>Conditional statements</h1>
+        <p class="taskTitle">Problem 1. Exchange if greater</p>
+        <ul class="taskBody">
+            <li>Write an if statement that takes two double variables a and b and exchanges their values if the first one is greater than the second.</li>
+            <li>As a result print the values a and b, separated by a space.</li>
+        </ul>
+        <p class="examples">Examples:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>a</th>
+                    <th>b</th>
+                    <th>result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>2 5</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>3 4</td>
+                </tr>
+                <tr>
+                    <td>5.5</td>
+                    <td>4.5</td>
+                    <td>4.5 5.5</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="input-data">
+            <label for="problem1-a">Enter a:</label>
+            <input id="problem1-a" />
+            <label for="problem1-b">Enter b:</label>
+            <input id="problem1-b" />
+            <button onclick="task1()">Result</button>
+        </div>
+
+        <p class="taskTitle">Problem 2. Multiplication Sign</p>
+        <ul class="taskBody">
+            <li>Write a script that shows the sign (+, - or 0) of the product of three real numbers, without calculating it.</li>
+            <li>Use a sequence of if operators.</li>
+        </ul>
+        <p class="examples">Examples:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>a</th>
+                    <th>b</th>
+                    <th>c</th>
+                    <th>result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>-2</td>
+                    <td>-2</td>
+                    <td>1</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>-2</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>-2.5</td>
+                    <td>4</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>-1</td>
+                    <td>-0.5</td>
+                    <td>-5.1</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="input-data">
+        <label for="problem2-a">Enter a:</label>
+        <input id="problem2-a" />
+        <label for="problem2-b">Enter b:</label>
+        <input id="problem2-b" />
+        <label for="problem2-c">Enter c:</label>
+        <input id="problem2-c" />
+        <button onclick="task2()">Result</button>
+        </div>
+
+
+        <p class="taskTitle">Problem 3. The biggest of Three</p>
+        <ul class="taskBody">
+            <li>Write a script that finds the biggest of three numbers.</li>
+            <li>Use nested if statements.</li>
+        </ul>
+        <p class="examples">Examples:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>a</th>
+                    <th>b</th>
+                    <th>c</th>
+                    <th>bigget</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>-2</td>
+                    <td>-2</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>-2</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>-2.5</td>
+                    <td>5</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>-0.1</td>
+                    <td>-0.5</td>
+                    <td>-1.1</td>
+                    <td>-0.1</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="input-data">
+            <label for="problem3-a">Enter a:</label>
+            <input id="problem3-a" />
+            <label for="problem3-b">Enter b:</label>
+            <input id="problem3-b" />
+            <label for="problem3-c">Enter c:</label>
+            <input id="problem3-c" />
+            <button onclick="task3()">Biggest</button>
+        </div>
+
+
+
+        <p class="taskTitle">Problem 4. Sort 3 numbers</p>
+        <ul class="taskBody">
+            <li>Sort 3 real values in descending order.</li>
+            <li>Use nested if statements.</li>
+        </ul>
+        <p class="examples">Note: Don’t use arrays and the built-in sorting functionality.</p>
+        <p class="examples">Examples:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>a</th>
+                    <th>b</th>
+                    <th>c</th>
+                    <th>result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>5 2 1</td>
+                </tr>
+                <tr>
+                    <td>-2</td>
+                    <td>-2</td>
+                    <td>1</td>
+                    <td>1 -2 -2</td>
+                </tr>
+                <tr>
+                    <td>-2</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>4 3 -2</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>-2.5</td>
+                    <td>5</td>
+                    <td>5 0 -2.5</td>
+                </tr>
+                <tr>
+                    <td>-1.1</td>
+                    <td>-0.5</td>
+                    <td>-0.1</td>
+                    <td>-0.1 -0.5 -1.1</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>30 20 10</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1 1 1</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="input-data">
+            <label for="problem4-a">Enter a:</label>
+            <input id="problem4-a" />
+            <label for="problem4-b">Enter b:</label>
+            <input id="problem4-b" />
+            <label for="problem4-c">Enter c:</label>
+            <input id="problem4-c" />
+            <button onclick="task4()">Result</button>
+        </div>
+        
+        
+        <p class="taskTitle">Problem 5. Digit as word</p>
+        <ul class="taskBody">
+            <li>Write a script that asks for a digit (0-9), and depending on the input, shows the digit as a word (in English).</li>
+            <li>Print “not a digit” in case of invalid input.</li>
+            <li>Use a switch statement.</li>
+        </ul>
+        <p class="examples">Examples:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>digit</th>
+                    <th>result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <td>two</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>one</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>zero</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>five</td>
+                </tr>
+                <tr>
+                    <td>-0.1</td>
+                    <td>not a digit</td>
+                </tr>
+                <tr>
+                    <td>hi</td>
+                    <td>not a digit</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>nine</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>not a digit</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="input-data">
+            <label for="problem5">Enter a digit:</label>
+            <input id="problem5" />
+            <button onclick="task5()">Result</button>
+        </div>
+        
+        
+        <p class="taskTitle">Problem 6. Quadratic equation</p>
+        <ul class="taskBody">
+            <li>Write a script that reads the coefficients a, b and c of a quadratic equation ax2 + bx + c = 0 and solves it (prints its real roots).</li>
+            <li>Calculates and prints its real roots.</li>
+        </ul>
+        <p class="examples">Note: Quadratic equations may have 0, 1 or 2 real roots.</p>
+        <p class="examples">Examples:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>a</th>
+                    <th>b</th>
+                    <th>c</th>
+                    <th>roots</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>-3</td>
+                    <td>x1=-3; x2=0.5</td>
+                </tr>
+                <tr>
+                    <td>-1</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>x1=3; x2=0</td>
+                </tr>
+                <tr>
+                    <td>-0.5</td>
+                    <td>4</td>
+                    <td>-8</td>
+                    <td>x1=x2=4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>8</td>
+                    <td>no real roots</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="input-data">
+            <label for="problem6-a">Enter a:</label>
+            <input id="problem6-a" />
+            <label for="problem6-b">Enter b:</label>
+            <input id="problem6-b" />
+            <label for="problem6-c">Enter c:</label>
+            <input id="problem6-c" />
+            <button onclick="task6()">Roots</button>
+        </div>
+        
+        
+        <p class="taskTitle">Problem 7. The biggest of five numbers</p>
+        <ul class="taskBody">
+            <li>Write a script that finds the greatest of given 5 variables.</li>
+            <li>Use nested if statements.</li>
+        </ul>
+        <p class="examples">Examples:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>a</th>
+                    <th>b</th>
+                    <th>c</th>
+                    <th>d</th>
+                    <th>e</th>
+                    <th>results</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>-2</td>
+                    <td>-22</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>-2</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>-2.5</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>-3</td>
+                    <td>-0.5</td>
+                    <td>-1.1</td>
+                    <td>-2</td>
+                    <td>-0.1</td>
+                    <td>-0.1</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="input-data">
+            <label for="problem7-a">Enter a:</label>
+            <input id="problem7-a" />
+            <label for="problem7-b">Enter b:</label>
+            <input id="problem7-b" />
+            <label for="problem7-c">Enter c:</label>
+            <input id="problem7-c" /><br />
+            <label for="problem7-d">Enter d:</label>
+            <input id="problem7-d" />
+            <label for="problem7-e">Enter e:</label>
+            <input id="problem7-e" />
+            <button onclick="task7()">Result</button>
+        </div>
+        
+
+        <p class="taskTitle">Problem 8. Number as words</p>
+        <ul class="taskBody">
+            <li>Write a script that converts a number in the range [0…999] to words, corresponding to its English pronunciation.</li>
+        </ul>
+        <p class="examples">Examples:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>numbers</th>
+                    <th>number as words</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0</td>
+                    <td>Zero</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Nine</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Ten</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Twelve</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Nineteen</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>Twenty five</td>
+                </tr>
+                <tr>
+                    <td>98</td>
+                    <td>Ninety eight</td>
+                </tr>
+                <tr>
+                    <td>273</td>
+                    <td>Two hundred and seventy three</td>
+                </tr>
+                <tr>
+                    <td>400</td>
+                    <td>Four hundred</td>
+                </tr>
+                <tr>
+                    <td>501</td>
+                    <td>Five hundred and one</td>
+                </tr>
+                <tr>
+                    <td>617</td>
+                    <td>Six hundred and seventeen</td>
+                </tr>
+                <tr>
+                    <td>711</td>
+                    <td>Seven hundred and eleven</td>
+                </tr>
+                <tr>
+                    <td>999</td>
+                    <td>Nine hundred and ninety nine</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="input-data">
+            <label for="problem8">Enter number in range [0...999]:</label>
+            <input id="problem8" />
+            <button onclick="task8()">Number as words</button>
+        </div>
+        <br />
+    </div>
+
+
+    <div id="js-console">
+        <script src="Scripts/js-console.js" type="text/javascript"></script>
+    </div>
+    <button id="clear-console" onclick="jsConsole.clearConsole()">Clear Console</button>
+    <script src="Scripts/scripts.js" type="text/javascript"></script>
+</body>
+</html>
+
