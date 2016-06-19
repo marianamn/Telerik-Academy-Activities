@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.Events", "08.Events\08.E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-19.ExtractStudentsInfo", "09-19.ExtractStudentsInfo\09-19.ExtractStudentsInfo.csproj", "{E10DC90B-D530-41FD-A51B-BCDAF99EFACA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20.InfiniteConvergentSeries", "20.InfiniteConvergentSeries\20.InfiniteConvergentSeries.csproj", "{725A5DD4-8769-4814-A849-D31A58332B09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{E10DC90B-D530-41FD-A51B-BCDAF99EFACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E10DC90B-D530-41FD-A51B-BCDAF99EFACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E10DC90B-D530-41FD-A51B-BCDAF99EFACA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{725A5DD4-8769-4814-A849-D31A58332B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{725A5DD4-8769-4814-A849-D31A58332B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{725A5DD4-8769-4814-A849-D31A58332B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{725A5DD4-8769-4814-A849-D31A58332B09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
