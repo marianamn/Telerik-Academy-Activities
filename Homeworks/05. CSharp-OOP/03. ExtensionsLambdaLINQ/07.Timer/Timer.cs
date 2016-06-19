@@ -37,13 +37,12 @@
 
         public void Run()
         {
-            while (ticks > 0)
+            while (this.ticks > 0)
             {
                 Thread.Sleep(this.timeInterval * 1000);
-                ticks--;
-                TimeEvent();
+                this.ticks--;
+                this.TimeEvent();
             }
         }
-
     }
 }
