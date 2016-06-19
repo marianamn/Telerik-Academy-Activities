@@ -6,8 +6,6 @@
     public class School : IComments
     {
         private string identifier;
-        private List<Teacher> teachers;
-        private List<Student> students;
 
         public School(string identifier, List<Teacher> teachers, List<Student> students)
         {
@@ -20,7 +18,7 @@
         {
             get
             {
-                return this.identifier;
+                return this.identifier; 
             }
 
             private set
