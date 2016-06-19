@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _08.Events
+﻿namespace _08.Events
 {
-    class Startup
+    public class Startup
     {
-        static void Main(string[] args)
+        public static void Main()
         {
+            Publisher publisher = new Publisher();
+            Subscriber subscriber1 = new Subscriber("Subscriber 1", publisher);
+            Subscriber subscriber2 = new Subscriber("Subscriber 2", publisher);
+
+            publisher.MassageToCustomers();
         }
     }
 }
