@@ -5,8 +5,8 @@ function solve(args){
         x1,
         x2;
 
-    x1 = (b + (Math.sqrt(Math.pow(b, 2) - 4 * a * c))) / (2 * a);
-    x2 = (b - (Math.sqrt(Math.pow(b, 2) - 4 * a * c))) / (2 * a);
+    x1 = (-b + (Math.sqrt(Math.pow(b, 2) - 4 * a * c))) / (2 * a);
+    x2 = (-b - (Math.sqrt(Math.pow(b, 2) - 4 * a * c))) / (2 * a);
 
     if ((Math.pow(b, 2) - 4 * a * c) < 0 || a === 0){
         console.log('no real roots');
