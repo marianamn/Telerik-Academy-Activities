@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Strings</title>
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <link rel="stylesheet" href="Styles/js-console.css" />
+</head>
+<body>
+    <div id="container">
+        <h1>Strings</h1>
+        <p class="taskTitle">Problem 1. Reverse string</p>
+        <ul class="taskBody">
+            <li>Write a JavaScript function that reverses a string and returns it.</li>
+        </ul>
+        <p class="examples">Examples:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>input</th>
+                    <th>output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>sample</td>
+                    <td>elpmas</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="input-data">
+            <label for="problem1">Enter text:</label>
+            <input id="problem1" name="problem1" />
+            <button onclick="task1()">Click to reverse text</button>
+        </div>
+
+
+
+        <p class="taskTitle">Problem 2. Correct brackets</p>
+        <ul class="taskBody">
+            <li>Write a JavaScript function to check if in a given expression the brackets are put correctly.</li>
+        </ul>
+        <p class="examples">Examples:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>correct expression</th>
+                    <th>incorrect expression</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>((a+b)/5-d)</td>
+                    <td>)(a+b))</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="input-data">
+            <label for="problem2">Enter an expression:</label>
+            <input id="problem2" name="problem2" />
+            <button onclick="task2()">Check if the brackets are put correctly</button><br />
+        </div>
+
+
+        <p class="taskTitle">Problem 3. Sub-string in text</p>
+        <ul class="taskBody">
+            <li>Write a JavaScript function that finds how many times a substring is contained in a given text (perform case insensitive search).</li>
+        </ul>
+        <p class="examples">Examples:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>text</th>
+                    <th>substring</th>
+                    <th>result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The text is as follows: We are living in an yellow submarine. We don&prime;t have anything else. inside the submarine is very tight. So we are drinking all the day. We will move out of it in 5 days.</td>
+                    <td>in</td>
+                    <td>9</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="input-data">
+            <label for="problem3-a">Enter text:</label>
+            <input id="problem3-a" name="problem3-a" />
+            <label for="problem3-b">Enter sub-string:</label>
+            <input id="problem3-b" name="problem3-b" />
+            <button onclick="task3()">Result</button>
+        </div>
+
+
+        <p class="taskTitle">Problem 4. Parse tags</p>
+        <ul class="taskBody">
+            <li>You are given a text. Write a function that changes the text in all regions:</li>
+        </ul>
+        <table class="example-code">
+            <tbody>
+                <tr>
+                    <td>
+                        &lt;upcase&gt;text&lt;/upcase&gt; to uppercase.<br />
+                        &lt;lowcase&gt;text&lt;/lowcase&gt; to lowercase<br />
+                        &lt;mixcase&gt;text&lt;/mixcase&gt; to mix casing(random)
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="examples">Examples:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>input</th>
+                    <th>result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>We are &lt;mixcase&gt;living&lt;/mixcase&gt; in a &lt;upcase&gt;yellow submarine&lt;/upcase&gt;. We &lt;mixcase>don&prime;t&lt;/mixcase&gt; have &lt;lowcase>anything&lt;/lowcase&gt; else.</td>
+                    <td>We are LiVinG in a YELLOW SUBMARINE. We dOn'T have anything else.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="examples">Note: Regions can be nested.</p>
+        <div class="input-data">
+            <label for="problem4">Enter text:</label>
+            <input id="problem4" name="problem4" />
+            <button onclick="task4()">Result</button>
+        </div>
+
+
+
+        <p class="taskTitle">Problem 5. nbsp</p>
+        <ul class="taskBody">
+            <li>Write a function that replaces non breaking white-spaces in a text with nbsp;</li>
+        </ul>
+        <p class="examples">Some Examples (for easier check):</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>text</th>
+                    <th>output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;some text&nbsp;&nbsp;</td>
+                    <td>   some text  </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="input-data">
+            <label for="problem5">Enter text with non breaking white-spaces:</label>
+            <input id="problem5" name="problem5" />
+            <button onclick="task5()">result</button><br />
+        </div>
+
+
+        <p class="taskTitle">Problem 6. Extract text from HTML</p>
+        <ul class="taskBody">
+            <li>Write a function that extracts the content of a html page given as text.</li>
+            <li>The function should return anything that is in a tag, without the tags.</li>
+        </ul>
+        <p class="examples">Examples:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>html page</th>
+                    <th>output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        &lt;html&gt;&lt;head&gt;&lt;title&gt;Sample site&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;div&gt;text&lt;div&gt;more text&lt;/div&gt;and more...
+                        &lt;/div&gt;in body&lt;/body&gt;&lt;/html&gt;
+                    </td>
+                    <td>Sample sitetextmore textand more...body</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="input-data">
+            <label for="problem6">Enter text:</label>
+            <input id="problem6" name="problem6" />
+            <button onclick="task6()">Result</button><br />
+        </div>
+
+
+
+        <p class="taskTitle">Problem 7. Parse URL</p>
+        <ul class="taskBody">
+            <li>Write a script that parses an URL address given in the format: [protocol]://[server]/[resource] and extracts from it the [protocol], [server] and [resource] elements.</li>
+            <li>Return the elements in a JSON object.</li>
+        </ul>
+        <p class="examples">Examples:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>URL</th>
+                    <th>result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>http://telerikacademy.com/Courses/Courses/Details/239</td>
+                    <td>protocol: http, server: telerikacademy.com resource: /Courses/Courses/Details/239</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="input-data">
+            <label for="problem7">Enter URL address:</label>
+            <input id="problem7" name="problem7" />
+            <button onclick="task7()">Result</button><br />
+        </div>
+
+
+
+        <p class="taskTitle">Problem 8. Replace tags</p>
+        <ul class="taskBody">
+            <li>Write a JavaScript function that replaces in a HTML document given as string all the tags <a href="…">…</a> with corresponding tags [URL=…]…/URL].</li>
+        </ul>
+        <p class="examples">Examples:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>input</th>
+                    <th>output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;p&gt;Please visit &lt;a href="http://academy.telerik.com"&gt;our site&lt;/a&gt; to choose a training course. Also visit &lt;a href="www.devbg.org"&gt;our forum&lt;/a&gt; to discuss the courses.&lt;/p&gt;</td>
+                    <td>&lt;p&gt;Please visit [URL=http://academy.telerik.com]our site[/URL] to choose a training course. Also visit [URL=www.devbg.org]our forum[/URL] to discuss the courses.&lt;/p&gt;</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="input-data">
+            <label for="problem8">Enter text:</label>
+            <input id="problem8" name="problem8" />
+            <button onclick="task8()">Result</button><br />
+        </div>
+
+
+
+        <p class="taskTitle">Problem 9. Extract e-mails</p>
+        <ul class="taskBody">
+            <li>Write a function for extracting all email addresses from given text.</li>
+            <li>All sub-strings that match the format @… should be recognized as emails.</li>
+            <li>Return the emails as array of strings.</li>
+        </ul>
+        <p class="examples">Some Examples (for easier check):</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>input</th>
+                    <th>output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>This is our mail: hello@abv.bg. Please use it instead of office@gmail.com since it is our old one. This is fake mail.</td>
+                    <td>hello@abv.bg, office@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="input-data">
+            <label for="problem9">Enter text:</label>
+            <input id="problem9" name="problem9" />
+            <button onclick="task9()">Result</button><br />
+        </div>
+
+
+
+        <p class="taskTitle">Problem 10. Find palindromes</p>
+        <ul class="taskBody">
+            <li>Write a program that extracts from a given text all palindromes, e.g. "ABBA", "lamal", "exe".</li>
+        </ul>
+        <p class="examples">Some Examples (for easier check):</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>input</th>
+                    <th>output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Text with palindromes ABBA, lamal, exe.</td>
+                    <td>ABBA, lamal, exe</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="input-data">
+            <label for="problem10">Enter text:</label>
+            <input id="problem10" name="problem10" />
+            <button onclick="task10()">Etract palindromes</button><br />
+        </div>
+
+
+        <p class="taskTitle">Problem 11. String format</p>
+        <ul class="taskBody">
+            <li>Write a function that formats a string using placeholders.</li>
+            <li>The function should work with up to 30 placeholders and all types.</li>
+        </ul>
+        <p class="examples">Examples:</p>
+        
+        <div class="input-data">
+
+            <button onclick="task11()">Formats a string using placeholders</button><br />
+        </div>
+
+
+
+        <p class="taskTitle">Problem 12. Generate list</p>
+        <ul class="taskBody">
+            <li>Write a function that creates a HTML ul using a template for every HTML li.</li>
+            <li>The source of the list should be an array of elements.</li>
+            <li>Replace all placeholders marked with –{…}– with the value of the corresponding property of the object.</li>
+        </ul>
+        <p class="examples">Some Examples (for easier check):</p>
+        
+        <div class="input-data">
+            <button onclick="task12()">Generate list</button><br />
+        </div>
+    </div>
+
+
+    <div id="js-console">
+        <script src="Scripts/js-console.js" type="text/javascript"></script>
+    </div>
+    <button id="clear-console" onclick="jsConsole.clearConsole()">Clear Console</button>
+    <script src="Scripts/scripts.js" type="text/javascript"></script>
+</body>
+</html>

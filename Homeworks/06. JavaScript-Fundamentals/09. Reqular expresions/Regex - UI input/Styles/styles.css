@@ -1,0 +1,113 @@
+﻿body{
+    align-items:center;
+    font-family:Arial;
+    line-height:24px;
+    color:#333;
+}
+
+#container{
+    width:60%;
+    float:left;
+    position:absolute;
+}
+
+
+.taskTitle{
+    font-weight:bold;
+    font-size:1.5em;
+    margin-top:40px;
+}
+
+.taskBody{
+    list-style:disc;
+    color:#333946;
+}
+
+.examples{
+    font-style:italic;
+    margin-left:40px;
+}
+
+table, td, th{
+    border:1px solid #bab6b6;
+    border-collapse:collapse;
+    margin-left:40px;
+    margin-bottom:40px;
+}
+
+td, th {
+    width:auto;
+    text-align:left;
+    padding:5px 10px 5px 10px;
+}
+
+tr:nth-child(2n+2){
+    background:#F8F8F8;
+}
+
+label{
+    margin-top:10px;
+    padding:10px;
+    color:#b10b0b;
+    font-weight:bold;
+}
+
+button{
+    padding:5px;
+    margin-left:5px;
+    color:darkblue;
+    font-weight:bold;
+    border-radius:5px;
+    font-family:Arial;
+    font-size:17px;
+    background: rgb(247,251,252); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(247,251,252,1) 0%, rgba(217,237,242,1) 40%, rgba(173,217,228,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,251,252,1)), color-stop(40%,rgba(217,237,242,1)), color-stop(100%,rgba(173,217,228,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fbfc', endColorstr='#add9e4',GradientType=0 ); /* IE6-9 */
+}
+
+#clear-console{
+    color:darkblue;
+    font-weight:bold;
+    border-radius:5px;
+    float:right;
+    position:fixed;
+    left:75%;
+    top:79%;
+}
+
+#clear-console .js-console {
+    display:block;
+}
+
+input{
+    width:27%;
+    
+}
+
+.input-data{
+    background:rgba(217,237,242,1);
+    text-align:center;
+}
+
+.input-data .comment{
+    color:gray;
+    font-size:0.8em;
+    font-style:italic;
+}
+
+a{
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+.bold-text{
+    font-weight:bold;
+}
