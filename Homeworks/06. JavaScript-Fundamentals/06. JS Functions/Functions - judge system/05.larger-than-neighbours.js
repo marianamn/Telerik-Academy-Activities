@@ -1,7 +1,6 @@
 function solve(args){
-    var arr = args[0].split('\n'),
-        n = +arr[0],
-        numbers = arr[1].split(' ').map(Number),
+    var n = args[0],
+        numbers = args[1].split(' ').map(Number),
         count;
 
     //console.log(numbers);
