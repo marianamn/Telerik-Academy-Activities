@@ -31,7 +31,7 @@
 
 ###Class diagram:###
 
-![](/Images/ClassDiagram.png)
+![](/TeamWorks/01. Eath that chicken/Images/ClassDiagram.png)
 
 
 ###GitHub repository:###
