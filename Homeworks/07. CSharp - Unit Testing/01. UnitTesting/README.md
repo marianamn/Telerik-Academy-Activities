@@ -1,0 +1,1 @@
+Rebuild the soluion to restore all packages.
