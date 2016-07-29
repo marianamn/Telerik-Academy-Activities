@@ -93,9 +93,9 @@
       <Project>{b8b0b992-0338-4367-ad26-823775a719d8}</Project>
       <Name>02.Deck</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Santase\03. Santase.csproj">
-      <Project>{bf5e5e3e-7e57-4cee-a96e-efe2ca13b0ed}</Project>
-      <Name>03. Santase</Name>
+    <ProjectReference Include="..\03.Santase.GameLogic\03.Santase.GameLogic.csproj">
+      <Project>{0b25b6fc-04ce-4406-8789-c9be6c107da8}</Project>
+      <Name>03.Santase.GameLogic</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

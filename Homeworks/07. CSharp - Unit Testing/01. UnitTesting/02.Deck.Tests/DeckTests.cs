@@ -2,8 +2,7 @@
 {
     using System;
     using NUnit.Framework;
-    using Santase.Logic.Cards;
-    using Santase.Logic;
+    using _03.Santase.GameLogic.Cards;
 
     [TestFixture]
     public class DeckTests
@@ -23,8 +22,8 @@
         {
             Deck deck = new Deck();
 
-            Assert.IsTrue(Enum.IsDefined(typeof(CardSuit), deck.GetTrumpCard.Suit));
-            Assert.IsTrue(Enum.IsDefined(typeof(CardType), deck.GetTrumpCard.Type));
+            Assert.IsTrue(Enum.IsDefined(typeof(CardSuit), deck.TrumpCard.Suit));
+            Assert.IsTrue(Enum.IsDefined(typeof(CardType), deck.TrumpCard.Type));
         }
 
         [Test]
@@ -60,26 +59,26 @@
             }
 
             // take nextCard from empty deck should throw an exception
-            Assert.Throws<InternalGameException>(() => deck.GetNextCard());
+            Assert.Throws<_03.Santase.GameLogic.InternalGameException>(() => deck.GetNextCard());
         }
 
         [Test]
         public void ChangeTrumpCard_ShouldChangeTheTrumpCardIfThereAreCardsLeftInTheDeck()
         {
             Deck deck = new Deck();
-            var initialTrumpedCard = deck.GetTrumpCard;
+            var initialTrumpedCard = deck.TrumpCard;
 
             var newCard = deck.GetNextCard();
             deck.ChangeTrumpCard(newCard);
 
-            Assert.AreNotSame(initialTrumpedCard, deck.GetTrumpCard);
+            Assert.AreNotSame(initialTrumpedCard, deck.TrumpCard);
         }
 
         [TestCase(24)]
         public void ChangeTrumpCard_ShouldNotChangeTheTrumpCardIfThereAreNoCardsLeftInTheDeck(int cardsToBeDrawn)
         {
             Deck deck = new Deck();
-            var initialTrumpedCard = deck.GetTrumpCard;
+            var initialTrumpedCard = deck.TrumpCard;
 
             var newCard = new Card(CardSuit.Spade, CardType.Ace);
 
@@ -98,7 +97,7 @@
             deck.ChangeTrumpCard(newCard);
 
             Assert.AreEqual(0, deck.CardsLeft, "There should be no cards left in the deck after drawing 24 cards");
-            Assert.AreSame(initialTrumpedCard, deck.GetTrumpCard, "ChangeTrumpCard should not change the trump card when there are no cards left in the deck");
+            Assert.AreSame(initialTrumpedCard, deck.TrumpCard, "ChangeTrumpCard should not change the trump card when there are no cards left in the deck");
         }
     }
 }

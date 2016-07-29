@@ -1,10 +1,9 @@
 ﻿namespace _02.Deck
 {
+    using _03.Santase.GameLogic.Cards;
+    using _03.Santase.GameLogic.Extensions;
     using System.Collections.Generic;
     using System.Linq;
-    using Santase.Logic.Extensions;
-    using Santase.Logic.Cards;
-    using Santase.Logic;
 
     public class Deck : IDeck
     {
@@ -47,7 +46,7 @@
             this.TrumpCard = this.listOfCards[0];
         }
 
-        public Card TrumpCard { get; private set; }
+        public Card TrumpCard { get;  set; }
 
         public int CardsLeft => this.listOfCards.Count;
 
@@ -63,7 +62,7 @@
         {
             if (this.listOfCards.Count == 0)
             {
-                throw new InternalGameException("Deck is empty!");
+                throw new _03.Santase.GameLogic.InternalGameException("Deck is empty!");
             }
 
             var card = this.listOfCards[this.listOfCards.Count - 1];
