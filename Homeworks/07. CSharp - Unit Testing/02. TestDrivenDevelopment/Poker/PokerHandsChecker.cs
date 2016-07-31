@@ -242,7 +242,42 @@ namespace Poker
 
         public int CompareHands(IHand firstHand, IHand secondHand)
         {
-            throw new NotImplementedException();
+            if (!this.IsValidHand(firstHand) || !this.IsValidHand(secondHand))
+            {
+                throw new InvalidOperationException("Some of hands are invalid!");
+            }
+
+            // Straight flush
+            if (this.IsStraightFlush(firstHand) || this.IsStraightFlush(secondHand))
+            {
+                return ComparingHandsMethods.CompareTwoStraightFlushHands(firstHand, secondHand);
+            }
+
+            // FOur of a kind
+            if (this.IsFourOfAKind(firstHand) || this.IsFourOfAKind(secondHand))
+            {
+                return ComparingHandsMethods.CompareTwoFourOfAKindHands(firstHand, secondHand);
+            }
+
+            // Full house
+            if (this.IsFullHouse(firstHand) || this.IsFullHouse(secondHand))
+            {
+                return ComparingHandsMethods.CompareTwoFullHouseHands(firstHand, secondHand);
+            }
+
+            // Flush
+            if (this.IsFlush(firstHand) || this.IsFlush(secondHand))
+            {
+                return ComparingHandsMethods.CompareTwoFlushHands(firstHand, secondHand);
+            }
+
+            // Straight
+            if (this.IsStraight(firstHand) || this.IsStraight(secondHand))
+            {
+                return ComparingHandsMethods.CompareTwoStraightHands(firstHand, secondHand);
+            }
+
+            throw new NotImplementedException("High card is at last");
         }
 
         // additional methods for avoiding code duplication

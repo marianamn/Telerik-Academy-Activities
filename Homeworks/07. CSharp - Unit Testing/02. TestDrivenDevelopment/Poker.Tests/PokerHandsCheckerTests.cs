@@ -439,5 +439,129 @@
 
             Assert.IsFalse(this.handsChecker.IsFullHouse(hand));
         }
+
+        // CompareHands()
+        [Test]
+        public void PokerHandsChecker_CompareHands_TestCompareStraightFlushes()
+        {
+            Hand firstHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.Jack, CardSuit.Clubs),
+                new Card(CardFace.Jack, CardSuit.Hearts),
+                new Card(CardFace.Jack, CardSuit.Diamonds),
+                new Card(CardFace.Nine, CardSuit.Clubs),
+                new Card(CardFace.Nine, CardSuit.Hearts),
+            });
+
+            Hand secondHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.Six, CardSuit.Diamonds),
+                new Card(CardFace.Ten, CardSuit.Hearts),
+                new Card(CardFace.Six, CardSuit.Spades),
+                new Card(CardFace.Ten, CardSuit.Clubs),
+                new Card(CardFace.Six, CardSuit.Hearts),
+            });
+
+            Assert.AreEqual(1, handsChecker.CompareHands(firstHand, secondHand));
+        }
+
+        [Test]
+        public void PokerHandsChecker_CompareHands_TestCompareStraightFlush()
+        {
+            Hand firstHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.Jack, CardSuit.Clubs),
+                new Card(CardFace.Ten, CardSuit.Clubs),
+                new Card(CardFace.Queen, CardSuit.Clubs),
+                new Card(CardFace.King, CardSuit.Clubs),
+                new Card(CardFace.Nine, CardSuit.Clubs),
+            });
+
+            Hand secondHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.King, CardSuit.Hearts),
+                new Card(CardFace.Ace, CardSuit.Hearts),
+                new Card(CardFace.Ten, CardSuit.Hearts),
+                new Card(CardFace.Jack, CardSuit.Hearts),
+                new Card(CardFace.Queen, CardSuit.Hearts),
+            });
+
+            Assert.AreEqual(-1, handsChecker.CompareHands(firstHand, secondHand));
+        }
+        
+        [Test]
+        public void PokerHandsChecker_CompareHands_TestFourOfAkind()
+        {
+            Hand firstHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.Jack, CardSuit.Diamonds),
+                new Card(CardFace.Jack, CardSuit.Clubs),
+                new Card(CardFace.Jack, CardSuit.Spades),
+                new Card(CardFace.Jack, CardSuit.Hearts),
+                new Card(CardFace.Ten, CardSuit.Clubs),
+            });
+
+            Hand secondHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.Jack, CardSuit.Spades),
+                new Card(CardFace.Ten, CardSuit.Hearts),
+                new Card(CardFace.Jack, CardSuit.Clubs),
+                new Card(CardFace.Jack, CardSuit.Hearts),
+                new Card(CardFace.Jack, CardSuit.Diamonds),
+            });
+
+            Assert.IsTrue(this.handsChecker.IsFourOfAKind(firstHand) && this.handsChecker.IsFourOfAKind(secondHand));
+            Assert.AreEqual(0, handsChecker.CompareHands(firstHand, secondHand));
+        }
+        
+        [Test]
+        public void PokerHandsChecker_CompareHands_TestFlush()
+        {
+            Hand firstHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.Jack, CardSuit.Diamonds),
+                new Card(CardFace.Two, CardSuit.Diamonds),
+                new Card(CardFace.Seven, CardSuit.Diamonds),
+                new Card(CardFace.Queen, CardSuit.Diamonds),
+                new Card(CardFace.Ten, CardSuit.Diamonds),
+            });
+
+            Hand secondHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.Queen, CardSuit.Spades),
+                new Card(CardFace.Ten, CardSuit.Spades),
+                new Card(CardFace.Jack, CardSuit.Spades),
+                new Card(CardFace.Seven, CardSuit.Spades),
+                new Card(CardFace.Two, CardSuit.Spades),
+            });
+
+            Assert.IsTrue(this.handsChecker.IsFlush(firstHand) && this.handsChecker.IsFlush(secondHand));
+            Assert.AreEqual(0, handsChecker.CompareHands(firstHand, secondHand));
+        }
+        
+        [Test]
+        public void PokerHandsChecker_CompareHands_TestStraight()
+        {
+            Hand firstHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.Nine, CardSuit.Diamonds),
+                new Card(CardFace.Eight, CardSuit.Hearts),
+                new Card(CardFace.Queen, CardSuit.Diamonds),
+                new Card(CardFace.Jack, CardSuit.Spades),
+                new Card(CardFace.Ten, CardSuit.Clubs),
+            });
+
+            Hand secondHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.Nine, CardSuit.Clubs),
+                new Card(CardFace.Ten, CardSuit.Hearts),
+                new Card(CardFace.Eight, CardSuit.Spades),
+                new Card(CardFace.Seven, CardSuit.Hearts),
+                new Card(CardFace.Jack, CardSuit.Spades),
+            });
+
+            Assert.IsTrue(this.handsChecker.IsStraight(firstHand) && this.handsChecker.IsStraight(secondHand));
+            Assert.AreEqual(1, handsChecker.CompareHands(firstHand, secondHand));
+        }
     }
 }
