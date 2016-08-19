@@ -34,7 +34,7 @@ The Tetris game requires players to strategically rotate, move, and drop a proce
 	- T-blocks are also for filling small holes.
 	- Special blocks - blinking square
 	
-![](/Images/figures.png)
+![](Images/figures.png)
 
 - Start button - via Start button player starts the game. During the game this button is transformed to "Pause" button, through witch the player could pause the game at any time.
 - Keys to move figures - moving the figures is accomplished by arrow keys
