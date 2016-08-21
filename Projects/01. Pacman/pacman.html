@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Just Pacman</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/game.js"></script>
+</head>
+<body>
+    <div id="main-container">
+        <h1>JUST PACMAN</h1>
+        <div id="game-container">
+            <canvas id="game-canvas" class="pacman-canvas"></canvas>
+            <canvas id="maze-canvas" class="pacman-canvas"></canvas>
+        </div>
+        <img id="wallImage" src="images/wall3.jpg" style="display: none"/>
+    </div>
+
+    <div id="aside-container">
+        <div id="level-container">
+            <p>LEVEL:</p>
+            <p id="level">0</p>
+        </div>
+
+        <div id="score-container">
+            <p>SCORE:</p>
+            <p id="score">0</p>
+        </div>
+    </div>
+
+    <footer>
+        <a href="">&copy;Source code</a>
+    </footer>
+
+    <script>
+        window.onload = function(){
+            var game = createGame("#game-canvas", "#maze-canvas");
+            game.start();
+        }
+    </script>
+</body>
+</html>

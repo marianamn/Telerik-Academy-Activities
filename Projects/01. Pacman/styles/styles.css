@@ -1,0 +1,60 @@
+body{
+    width: 74%;
+    margin-left:auto;
+    margin-right:auto;
+    background-image: url("../images/background.jpg");
+}
+
+#main-container{
+    float: left;
+    width: 100%;
+
+}
+
+h1{
+    margin-left: 280px;
+    color:#000F4D;
+    font-size: 35px;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+}
+
+#aside-container{
+    float: right;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+    height: 224px;
+    background-color: #000F4D;
+}
+
+#level-container, #score-container{
+    background-color: antiquewhite;
+    padding: 5px;
+    margin: 10px 5px;
+    font-weight: bold;
+    color:#222222;
+}
+
+canvas{
+    border: 1px solid black;
+}
+
+#game-container{
+    position: relative;
+}
+
+#game-container .pacman-canvas{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#maze-canvas{
+    background-color: black;
+}
+
+#game-canvas{
+    z-index: 1000;
+}
+
