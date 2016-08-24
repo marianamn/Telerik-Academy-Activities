@@ -649,13 +649,7 @@ function createGame(fieldSelector, blockSelector, tetrisNextSelector) {
     ctxBlocks.canvas.width = fieldWidth * buildBlockSize;
     ctxBlocks.canvas.height = fieldHeight * buildBlockSize;
 
-    ctxBlocks.font = "18px monospace";
-    ctxBlocks.fillStyle = "rgb(64, 118, 124)";
-    ctxBlocks.strokeStyle = "rgb(64, 118, 124)";
-    ctxBlocks.fillText("CLICK 'Start'", 80, 100);
-    ctxBlocks.strokeText("CLICK 'Start'", 80, 100);
-    ctxBlocks.fillText("BUTTON TO BEGIN GAME!", 50, 130);
-    ctxBlocks.strokeText("BUTTON TO BEGIN GAME!", 50, 130);
+star
     ctxBlocks.fillText("controls:", 30, 200);
     ctxBlocks.strokeText("controls:", 30, 200);
     ctxBlocks.fillText("up    - rotate block", 30, 230);
