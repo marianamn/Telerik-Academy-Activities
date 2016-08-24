@@ -9,11 +9,14 @@
 <body>
     <div id="main-container">
         <h1>JUST PACMAN</h1>
+        <button id="start">Start</button>
+
         <div id="game-container">
             <canvas id="game-canvas" class="pacman-canvas"></canvas>
             <canvas id="maze-canvas" class="pacman-canvas"></canvas>
         </div>
         <img id="wallImage" src="images/wall3.jpg" style="display: none"/>
+        <img id="pacmanImage" src="images/pacman.png" style="display: none"/>
     </div>
 
     <div id="aside-container">
@@ -29,13 +32,13 @@
     </div>
 
     <footer>
-        <a href="">&copy;Source code</a>
+        <a id="footer-link" href="https://github.com/marianamn/Telerik-Academy-Activities/tree/master/Projects/01.%20Pacman">JUST PACMAN</a>
+        <p id="all-rights">All rights reserved &copy; Mariana Naidenova</p>
     </footer>
 
     <script>
         window.onload = function(){
             var game = createGame("#game-canvas", "#maze-canvas");
-            game.start();
         }
     </script>
 </body>

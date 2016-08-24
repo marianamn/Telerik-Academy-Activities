@@ -43,6 +43,7 @@ function createGame(pacmanSelector, mazeSelector){
         walls = [],
         level = 1,
         score = 0,
+        isPushedStart = false,
         dir = 0,
         keyCodeToDirs = {
             "37": 2,
@@ -71,7 +72,6 @@ function createGame(pacmanSelector, mazeSelector){
 
     document.getElementById('level').innerHTML = level;
 
-
     var maze = mazes[level - 1];
 
     const rows = maze.length,
@@ -81,8 +81,6 @@ function createGame(pacmanSelector, mazeSelector){
     mazeCanvas.height = (rows + 1) * pacman.size;
     pacmanCanvas.width = (cols + 1) * pacman.size;
     pacmanCanvas.height = (rows + 1) * pacman.size;
-
-
 
     function gameLoop(){
         const offset = 5;
@@ -254,10 +252,29 @@ function createGame(pacmanSelector, mazeSelector){
         ];
     }
 
-    return{
-        "start": function () {
+    var pacmanImage = document.getElementById("pacmanImage");
+    mazeCtx.drawImage(pacmanImage, 300, 10);
+
+    mazeCtx.font = "18px monospace";
+    mazeCtx.fillStyle = "rgb(255, 255, 0)";
+    mazeCtx.strokeStyle = "rgb(255, 255, 0)";
+    mazeCtx.fillText("CLICK 'Start'", 250, 100);
+    mazeCtx.strokeText("CLICK 'Start'", 250, 100);
+    mazeCtx.fillText("BUTTON TO BEGIN GAME!", 200, 130);
+    mazeCtx.strokeText("BUTTON TO BEGIN GAME!", 200, 130);
+
+    document.getElementById('start').addEventListener('click', function() {
+        if (isPushedStart === false) {
+            isPushedStart = true;
+            this.innerText = "Pause";
+
+            mazeCtx.clearRect(0, 0, pacmanCanvas.width, pacmanCanvas.height);
             [balls, walls] = drawMazeAndGetBallsAndWalls(mazeCtx, maze, pacman.size + 4);
+
             gameLoop();
+        } else {
+            isPushedStart = false;
+            this.innerText = "Start";
         }
-    }
+    });
 }
