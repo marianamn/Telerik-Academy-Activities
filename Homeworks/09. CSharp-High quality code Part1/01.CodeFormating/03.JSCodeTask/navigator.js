@@ -28,7 +28,7 @@ if (b === "Netscape") {
 
 function popTip() {
     if (b === "Netscape") {
-        theLayer = eval('document.layers[\'ToolTip\']');
+        theLayer = 'document.layers[\'ToolTip\']';
 
         if ((positionX + 120) > window.innerWidth) {
             positionX = window.innerWidth - 150;
@@ -38,7 +38,7 @@ function popTip() {
         theLayer.top = positionY + 15;
         theLayer.visibility = 'show';
     } else {
-        theLayer = eval('document.all[\'ToolTip\']');
+        theLayer = 'document.all[\'ToolTip\']';
 
         if (theLayer) {
             positionX = event.x - 5;
@@ -107,10 +107,10 @@ function showFirstMenu() {
     var theLayer;
 
     if (b === "Netscape") {
-        theLayer = eval('document.layers[\'menu1\']');
+        theLayer = 'document.layers[\'menu1\']';
         theLayer.visibility = 'show';
     } else {
-        theLayer = eval('document.all[\'menu1\']');
+        theLayer = 'document.all[\'menu1\']';
         theLayer.style.visibility = 'visible';
     }
 }
@@ -129,10 +129,10 @@ function showSecondMenu() {
     'use strict';
 
     if (b === "Netscape") {
-        theLayer = eval('document.layers[\'menu2\']');
+        theLayer = 'document.layers[\'menu2\']';
         theLayer.visibility = 'show';
     } else {
-        theLayer = eval('document.all[\'menu2\']');
+        theLayer = 'document.all[\'menu2\']';
         theLayer.style.visibility = 'visible';
     }
 }

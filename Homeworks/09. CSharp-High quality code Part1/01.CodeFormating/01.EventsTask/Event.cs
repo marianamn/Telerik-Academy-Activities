@@ -5,10 +5,6 @@
 
     public class Event : IComparable
     {
-        private DateTime date;
-        private string title;
-        private string location;
-
         public Event(DateTime date, string title, string location)
         {
             this.Date = date;
@@ -25,9 +21,9 @@
         public int CompareTo(object obj)
         {
             Event other = obj as Event;
-            int orderByDate = this.date.CompareTo(other.Date);
-            int orderByTitle = this.title.CompareTo(other.Title);
-            int orderByLocation = this.location.CompareTo(other.Location);
+            int orderByDate = this.Date.CompareTo(other.Date);
+            int orderByTitle = this.Title.CompareTo(other.Title);
+            int orderByLocation = this.Location.CompareTo(other.Location);
 
             if (orderByDate == 0)
             {
