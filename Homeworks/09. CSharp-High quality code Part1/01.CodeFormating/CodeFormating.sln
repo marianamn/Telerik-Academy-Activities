@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.EventsTask", "01.EventsTask\01.EventsTask.csproj", "{04404BBA-AD12-41B6-B264-C4AB7376FB37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.BunniesTask", "02.BunniesTask\02.BunniesTask.csproj", "{94AE9C0B-E3BF-40EA-8342-DC8EBF304EAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.JSCodeTask", "03.JSCodeTask\03.JSCodeTask.csproj", "{716F2363-7B7C-45D7-A412-CFC56684A555}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04404BBA-AD12-41B6-B264-C4AB7376FB37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04404BBA-AD12-41B6-B264-C4AB7376FB37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04404BBA-AD12-41B6-B264-C4AB7376FB37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04404BBA-AD12-41B6-B264-C4AB7376FB37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94AE9C0B-E3BF-40EA-8342-DC8EBF304EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94AE9C0B-E3BF-40EA-8342-DC8EBF304EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94AE9C0B-E3BF-40EA-8342-DC8EBF304EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94AE9C0B-E3BF-40EA-8342-DC8EBF304EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{716F2363-7B7C-45D7-A412-CFC56684A555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{716F2363-7B7C-45D7-A412-CFC56684A555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{716F2363-7B7C-45D7-A412-CFC56684A555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{716F2363-7B7C-45D7-A412-CFC56684A555}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
