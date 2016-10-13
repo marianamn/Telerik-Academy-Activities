@@ -649,7 +649,6 @@ function createGame(fieldSelector, blockSelector, tetrisNextSelector) {
     ctxBlocks.canvas.width = fieldWidth * buildBlockSize;
     ctxBlocks.canvas.height = fieldHeight * buildBlockSize;
 
-star
     ctxBlocks.fillText("controls:", 30, 200);
     ctxBlocks.strokeText("controls:", 30, 200);
     ctxBlocks.fillText("up    - rotate block", 30, 230);
