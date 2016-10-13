@@ -1,0 +1,21 @@
+{
+  "name": "car-store",
+  "version": "1.0.0",
+  "description": "Car Store project for the JavaScript Applications course teamwork.",
+  "main": "./js/main.js",
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha -R spec ./js/tests/clothes-factory-tests.js --compilers js:babel-register"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-register": "^6.16.3",
+    "chai": "^3.5.0",
+    "mocha": "^3.1.0",
+    "navigo": "^3.0.0",
+    "sinon": "^1.17.6",
+    "systemjs": "^0.19.39",
+    "systemjs-plugin-babel": "0.0.15"
+  }
+}

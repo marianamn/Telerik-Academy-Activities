@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Get Dressed</title>
+    <link rel='shortcut icon' href='./img/favicon.ico' type='image/x-icon' />
+    <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./bower_components/toastr/toastr.css">
+    <link rel="stylesheet" type="text/css" href="./theme-css/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+    <!--Theme css-->
+    <link href="./theme-css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./theme-css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./theme-css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./theme-css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./theme-css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./theme-css/kendo.common.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./theme-css/kendo.default.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./theme-css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600'
+        rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <header>
+        <h2 class="main-heading">Get Dressed</h2>
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#/home">Home</a>
+                </li>
+                <li>
+                    <a href="#/categories">Categories</a>
+                </li>
+                <li>
+                    <a href="#/contacts">Where we are</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="login-register">
+                    <a id="login" href="#/login" class="btn btn-default not-logged-in">Login</a>
+                </li>
+                <li>
+                    <a id="register" href="#/register" class="btn btn-default not-logged-in">Register</a>
+                </li>
+                <li class="login-register">
+                    <a id="logout" href="#/logout" class="btn btn-default logged-in">Logout</a>
+                </li>
+                <li>
+                    <img id="cart" class="logged-in" src="./img/cart/cart-icon.jpg" />
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <span id="hello-username" class="username not-logged-in"></span>
+    <div id="template-holder"></div>
+
+
+    <footer>
+        <p>All rights reserved &copy;<br> Team Suicide Squad - Telerik Academy 2016</p>
+    </footer>
+
+
+    <!--Libs-->
+    <script src="./node_modules/navigo/lib/navigo.js"></script>
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/systemjs/dist/system.js"></script>
+    <script src="./bower_components/handlebars/handlebars.js"></script>
+    <script src="./bower_components/toastr/toastr.js"></script>
+
+    <!--App-->
+    <script src="js/requester.js"></script>
+    <script src="./js/controllers.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/templatesLoader.js"></script>
+    <script src="./js/validator.js"></script>
+
+    <!--Theme-->
+    <script src="./theme-js/bootstrap.min.js"></script>
+    <script src="./theme-js/bootstrap.min.js"></script>
+    <script src="./theme-js/flickr.js"></script>
+    <script src="./theme-js/flexslider.min.js"></script>
+    <script src="./theme-js/jquery.min.js"></script>
+    <script src="./theme-js/lightbox.min.js"></script>
+    <script src="./theme-js/masonry.min.js"></script>
+    <script src="./theme-js/twitterfetcher.min.js"></script>
+    <script src="./theme-js/spectragram.min.js"></script>
+    <script src="./theme-js/ytplayer.min.js"></script>
+    <script src="./theme-js/countdown.min.js"></script>
+    <script src="./theme-js/smooth-scroll.min.js"></script>
+    <script src="./theme-js/parallax.js"></script>
+    <script src="./theme-js/scripts.js"></script>
+    <script src="./theme-js/jquery.bxslider.js"></script>
+    <script src="./theme-js/kendo.all.min.js"></script>
+
+    <script src="./system-config.js"></script>
+    <script>
+        System.import('main');
+        System.import('clothesFactory');
+    </script>
+</body>
+
+</html>

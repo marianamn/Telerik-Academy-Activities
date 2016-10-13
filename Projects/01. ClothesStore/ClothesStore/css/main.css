@@ -1,0 +1,164 @@
+body{
+    width: 100%;
+    position: absolute;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#cart{
+    height: 50px;
+}
+
+.filter{
+    display: none;
+}
+
+
+/* Login/Logout/Register styles*/
+.logged-in {
+    display: none !important;
+}
+
+.not-logged-in {
+    display: block;
+    float: right;
+}
+
+.username{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+#hello-username .logged-in {
+    display: block;
+}
+
+#hello-username .not-logged-in {
+    display: none;
+}
+
+
+/* home page styles*/
+.main-heading{
+    padding-top: 10px;
+}
+
+#cart {
+    padding-left: 5px;
+}
+
+.home-page-image {
+    text-align: center;
+    width: 860px;
+    height: 430px;
+}
+
+.slide-container {
+    text-align: center;
+    width: 860px;
+    margin: 0 auto;
+}
+
+.slide-container h2{
+    padding-left: 80px;
+}
+
+footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* categories page styles*/
+.category-img{
+    width: 600px;
+    height: 300px;
+}
+
+.category-name{
+    font-size: 26px;
+    padding-left: 130px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* items page styles*/
+.item-img{
+    width: 250px;
+    height: 280px;
+}
+
+.item-name{
+    font-size: 22px;
+    padding-left: 50px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-back{
+    margin-top: 50px;
+    margin-left: 460px;
+}
+
+.paging{
+    margin-top: 50px;
+    margin-left: 400px;
+}
+
+/* items details page styles*/
+.detailed-item-image{
+    float: left;
+    width: 350px;
+    height: 380px;
+}
+
+.detailed-item-info{
+    float: left;
+    padding-left: 50px;
+}
+
+.detailed-item-name{
+    font-size: 26px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.detailed-item-details{
+    font-style: italic;
+    padding-left: 50px;
+}
+
+.detailed-item-price{
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.btn-back-cart{
+    margin-top: 50px;
+    margin-left: 400px;
+}
+
+.cart-title{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* items order-accepted page styles*/
+.order-accepted{
+    text-align: center;
+}
+
+.filter-name{
+    font-size: 1.5em;
+    margin-top: 8px;
+    font-style: italic
+}
+
+.filter-label{
+    padding-left: 250px;
+}
