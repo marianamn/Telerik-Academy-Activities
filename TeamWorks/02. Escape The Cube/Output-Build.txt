@@ -1,3 +1,0 @@
-﻿1>------ Build started: Project: TheCube, Configuration: Debug Any CPU ------
-1>  TheCube -> D:\Telerik\0 - GitHub\CyclopsKing\CyclopsKing\TheCube\bin\Debug\TheCube.exe
-========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
