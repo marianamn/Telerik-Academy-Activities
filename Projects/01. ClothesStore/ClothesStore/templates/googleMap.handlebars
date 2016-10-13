@@ -1,0 +1,16 @@
+    <p style="margin-bottom:10px; font-weight:bold">София, Стоков базар "Илиянци"</p>
+    <div id="map" style="height: 300px; width: 50%"></div>
+    <script>
+        function initMap() {
+            var uluru = {lat: 42.73178, lng: 23.32126};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeueDs6m5tBxkDesCOY9U4Fc7V7xx7_IA&callback=initMap" async defer></script>

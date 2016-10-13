@@ -1,0 +1,72 @@
+<section class="page-title-6 cart-title bg-secondary text-center">
+    <h3 class="uppercase mb0">Shopping Cart</h3>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                <table class="table cart mb48">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>Product</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#if this.length}}
+                        {{#each this}}
+                        <tr data-id={{_id}}>
+                            <th scope="row">
+                                <a href="#/shoppingCart" class="btn-remove-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Remove from cart">
+                                    <i class="ti-close"></i>
+                                </a>
+                            </th>
+                            <td>
+                                <a href="#">
+                                    <img alt="Product" class="product-thumb" src="{{imageURL}}" />
+                                </a>
+                            </td>
+                            <td>
+                                <span>{{name}}</span>
+                            </td>
+                            <td>
+                                <span>${{price}}</span>
+                            </td>
+                        </tr>
+                        {{/each}}
+                        {{else}}
+                            <td>
+                                <span>No items added to the cart!</span>
+                            </td>
+                        {{/if}}
+                    </tbody>
+                </table>
+            </div>
+
+            <!--totals-->
+            <div class="col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                <div class="mb24">
+                    <h5 class="uppercase">Your Order Total</h5>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Order Total</th>
+                                <td>
+                                    <strong id="totalPrice"></strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <form class="#btn-add-details">
+                        <a href="#/addDeliveryDetails" class="btn btn-default #btn-add-details">Proceed To Checkout</a>
+                        <!--<a href="#/addDeliveryDetails"><input type="submit" value="Proceed To Checkout"/></a>-->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      

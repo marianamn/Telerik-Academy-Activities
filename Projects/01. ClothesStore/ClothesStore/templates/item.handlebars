@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row gallery-item">
+        <img class="thumbnail detailed-item-image" src="{{imageURL}}"/>
+
+        <div class="detailed-item-info">
+            <label class="detailed-item-name">{{name}}</label>
+            <p class="detailed-item-details">Gender: {{gender}}</p>
+            <p class="detailed-item-details">Color: {{color}}</p>
+            <p class="detailed-item-details">Available Size: {{availableSize}}</p>
+            <p class="detailed-item-price">Product price: ${{price}}</p>
+        </div>
+    </div>
+
+    <div class="btn-back-cart">
+        <a href="#/{{category}}" class="btn btn-default">Back to {{category}}</a>
+        <button id="btn-add-item" class="btn btn-default">Add to cart</button>
+    </div>
+</div>

@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7EAEA7A-5D6B-4405-A729-4928D603FEF4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EatThatChicken</RootNamespace>
+    <AssemblyName>EatThatChicken</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>muscle.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Common\CommandBase.cs" />
+    <Compile Include="Common\Constants\ErrorMessages.cs" />
+    <Compile Include="Common\Constants\GlobalConstants.cs" />
+    <Compile Include="Common\Validator.cs" />
+    <Compile Include="Contracts\IAttackable.cs" />
+    <Compile Include="Contracts\IBird.cs" />
+    <Compile Include="Contracts\IBullet.cs" />
+    <Compile Include="Contracts\IBulletAffectable.cs" />
+    <Compile Include="Contracts\IGameObject.cs" />
+    <Compile Include="Contracts\IGameObjectFactory.cs" />
+    <Compile Include="Contracts\IHunter.cs" />
+    <Compile Include="Contracts\IAffectableGameObject.cs" />
+    <Compile Include="Contracts\IMoveable.cs" />
+    <Compile Include="Contracts\IRecordable.cs" />
+    <Compile Include="Contracts\IScorable.cs" />
+    <Compile Include="Contracts\ISerializer.cs" />
+    <Compile Include="Contracts\IWPFGameRenderer.cs" />
+    <Compile Include="Common\Events\EndGameEventArgs.cs" />
+    <Compile Include="Core\SimpleCollisionDetector.cs" />
+    <Compile Include="Models\Exceptions\RecordSerializationException.cs" />
+    <Compile Include="Models\HighScoreContainer.cs" />
+    <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\Serialization\RecordSerializer.cs" />
+    <Compile Include="Engines\GameEngine.cs" />
+    <Compile Include="Common\Enumerations\MoveType.cs" />
+    <Compile Include="Factories\BirdsFactories\AngryBirdGenerator.cs" />
+    <Compile Include="Factories\BirdsFactories\BirdFactory.cs" />
+    <Compile Include="Factories\BirdsFactories\MuscleBirdGenerator.cs" />
+    <Compile Include="Factories\BirdsFactories\NaughtyBirdGenerator.cs" />
+    <Compile Include="Factories\BirdsFactories\SkinyBirdGenerator.cs" />
+    <Compile Include="Factories\BulletFactory.cs" />
+    <Compile Include="Factories\HunterFactory.cs" />
+    <Compile Include="Factories\ItemsFactory\ItemGenerator.cs" />
+    <Compile Include="GameObjects\Birds\AngryBird.cs" />
+    <Compile Include="GameObjects\Birds\Bird.cs" />
+    <Compile Include="GameObjects\Birds\MuscleBird.cs" />
+    <Compile Include="GameObjects\Birds\NaughtyBird.cs" />
+    <Compile Include="GameObjects\Birds\SkinyBird.cs" />
+    <Compile Include="Contracts\IGameRenderer.cs" />
+    <Compile Include="GameObjects\GameItems\Bomb.cs" />
+    <Compile Include="GameObjects\GameItems\ChickenLeg.cs" />
+    <Compile Include="GameObjects\GameItems\Heart.cs" />
+    <Compile Include="GameObjects\GameItems\Item.cs" />
+    <Compile Include="Common\ItemAttribute.cs" />
+    <Compile Include="GameObjects\Hunters\Hunter.cs" />
+    <Compile Include="Common\MoveAction.cs" />
+    <Compile Include="Common\Enumerations\GameActionType.cs" />
+    <Compile Include="Contracts\ICollisionDetector.cs" />
+    <Compile Include="Common\Events\KeyDownEventArgs.cs" />
+    <Compile Include="GameObjects\Bullets\Bullet.cs" />
+    <Compile Include="Common\Structs\GameObjectBounds.cs" />
+    <Compile Include="Renderers\WPFGameRenderer.cs" />
+    <Compile Include="ViewModel\EndGameViewModel.cs" />
+    <Compile Include="ViewModel\HighScoreViewModel.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\GameFieldViewModel.cs" />
+    <Compile Include="View\EndGameWindow.xaml.cs">
+      <DependentUpon>EndGameWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GameFieldWindow.xaml.cs">
+      <DependentUpon>GameFieldWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="View\EndGameWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\HighScoreWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Instructions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Structs\Position.cs" />
+    <Compile Include="Common\Structs\Size.cs" />
+    <Compile Include="GameObjects\GameObject.cs" />
+    <Compile Include="View\HighScoreWindow.xaml.cs">
+      <DependentUpon>HighScoreWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Instructions.xaml.cs">
+      <DependentUpon>Instructions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="View\GameFieldWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="EatThatChickenDiagram.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\galaxy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chicken.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sindel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Birds\angry.png" />
+    <Resource Include="Images\Birds\muscle.png" />
+    <Resource Include="Images\Birds\naughty.png" />
+    <Resource Include="Images\Birds\skiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Hunter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bomb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chicken-leg.png" />
+    <Resource Include="Images\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\background-galaxy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\instructions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="muscle.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\Bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\endWindowBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\galaxy-1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

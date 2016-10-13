@@ -1,0 +1,45 @@
+<div>
+    <form class="form-horizontal">
+        <fieldset>
+            <legend>Add delivery details</legend>
+            <div class="form-group">
+                <label for="name" class="col-lg-2 control-label">Name</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="inputName" placeholder="Enter your full name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name" class="col-lg-2 control-label">Phone number</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="inputPhone" placeholder="Enter your phone">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="textArea" class="col-lg-2 control-label">Address</label>
+                <div class="col-lg-10">
+                    <textarea class="form-control" rows="3" id="Address" placeholder="Enter your Address"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="date" class="col-lg-2 control-label">Delivery date</label>
+                <div class="col-lg-10">
+                    <input id="datetimepicker" placeholder="Delivery date" class="form-controle full-width" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-10">
+                    <a href="#/orderAccepted" class="btn btn-default #btn-order-accept">Submit</a>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<script>
+    $(document).ready(function () {
+        // create DateTimePicker from input HTML element
+        $("#datetimepicker").kendoDateTimePicker({
+            value:new Date()
+        });
+    });
+</script>
