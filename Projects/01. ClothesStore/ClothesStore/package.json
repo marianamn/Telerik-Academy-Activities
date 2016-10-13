@@ -1,7 +1,7 @@
 {
-  "name": "car-store",
+  "name": "clothes-store",
   "version": "1.0.0",
-  "description": "Car Store project for the JavaScript Applications course teamwork.",
+  "description": "clothes shop project for the JavaScript Applications.",
   "main": "./js/main.js",
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha -R spec ./js/tests/clothes-factory-tests.js --compilers js:babel-register"
