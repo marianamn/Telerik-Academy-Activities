@@ -18,9 +18,7 @@
 
 ###Class diagram:###
 
-![](/Images/ClassDiagram.png)
+![](./Images/ClassDiagram.png)
 
-
-###Live preview:###
 
 
