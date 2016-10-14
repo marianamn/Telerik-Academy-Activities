@@ -396,7 +396,6 @@ function createGame(fieldSelector, blockSelector, tetrisNextSelector) {
         if (position.left < 0) {
             return false;
         }
-        
         //Check for RIGHT boundary
         if (position.left + currShape[0].length > fieldWidth) {
             return false;
@@ -411,13 +410,13 @@ function createGame(fieldSelector, blockSelector, tetrisNextSelector) {
             hLen = currShape[v].length;
             for (let h = 0; h < hLen; h += 1) {
 
-                //Check for game over
+                //Check for game over (could also take it out in a separate function)
                 if (position.top === 1 &&
                     gameField.shape[position.top + v][position.left + h] === 1) {
                     isOver = true;
                 }
-
                 //End of game-over piece
+
                 if (currShape[v][h] === 1 &&
                     gameField.shape[position.top + v][position.left + h] === 1) {
                     return false;
@@ -431,35 +430,30 @@ function createGame(fieldSelector, blockSelector, tetrisNextSelector) {
     function respondToKeyDown(ev) {
         switch (ev.keyCode) {
             case 37:
-                {
-                    //left
+                { //left
                     //play sound
                     document.getElementById('moveLeftRight').play();
                     currentFieldPosition.left -= 1;
                     if (!isValidBlockPosition(currentFieldPosition)) {
                         currentFieldPosition.left += 1;
                     }
-
                     ctxBlocks.clearRect(0, 0, blockCanvas.clientWidth, blockCanvas.clientHeight);
                     drawTetrisBlock(tetrisBlock, currentFieldPosition, ctxBlocks);
                     break;
                 }
             case 39:
-                {
-                    //right
+                { //right
                     document.getElementById('moveLeftRight').play();
                     currentFieldPosition.left += 1;
                     if (!isValidBlockPosition(currentFieldPosition)) {
                         currentFieldPosition.left -= 1;
                     }
-
                     ctxBlocks.clearRect(0, 0, blockCanvas.clientWidth, blockCanvas.clientHeight);
                     drawTetrisBlock(tetrisBlock, currentFieldPosition, ctxBlocks);
                     break;
                 }
             case 38:
-                {
-                    //up: rotate clockwise
+                { //up: rotate clockwise
                     document.getElementById('rotateLeftRight').play();
 
                     var prevState = tetrisBlock.state;
@@ -467,14 +461,12 @@ function createGame(fieldSelector, blockSelector, tetrisNextSelector) {
                     if (!isValidBlockPosition(currentFieldPosition)) {
                         tetrisBlock.state = prevState;
                     }
-
                     ctxBlocks.clearRect(0, 0, blockCanvas.clientWidth, blockCanvas.clientHeight);
                     drawTetrisBlock(tetrisBlock, currentFieldPosition, ctxBlocks);
                     break;
                 }
             case 40:
-                {
-                    //down: interval - position block to bottom
+                { //down: interval - position block to bottom
                     document.getElementById('fallDown').play();
                     moveBlockDown();
                     break;
@@ -573,7 +565,6 @@ function createGame(fieldSelector, blockSelector, tetrisNextSelector) {
             for (let v = 0; v < vLen; v += 1) {
                 countRow += startGameField.shape[h][v];
             }
-
             if (countRow === 20) // check if all are 1
             {
                 startGameField.shape.splice(h, 1); // remove row
@@ -599,15 +590,15 @@ function createGame(fieldSelector, blockSelector, tetrisNextSelector) {
             document.getElementById('level').innerHTML = level;
 
             //restarting when 250 points reached
-            if(document.getElementById('result').innerHTML >= 250){
+            /*if(document.getElementById('result').innerHTML>=1000){
 
-              if (confirm("You win!!! You reached 250 points! Press OK to restart the game!")) {
+              if (confirm("You win!! You reached 250 points! Press OK to restart the game!")) {
                         alert("Thanks for that!");
               } else {
                         alert("Why did you press cancel? Press Ok next time :) :) !");
               }
 
-             refresh();}
+             refresh();}*/
         }
 
     }
@@ -640,8 +631,7 @@ function createGame(fieldSelector, blockSelector, tetrisNextSelector) {
         }else{
             document.getElementById("game-over").style.display = "block";
         }
-
-        //console.log(isOver);
+        console.log(isOver);
     }
 
     ctxField.canvas.width = fieldWidth * buildBlockSize;
@@ -649,6 +639,13 @@ function createGame(fieldSelector, blockSelector, tetrisNextSelector) {
     ctxBlocks.canvas.width = fieldWidth * buildBlockSize;
     ctxBlocks.canvas.height = fieldHeight * buildBlockSize;
 
+    ctxBlocks.font = "18px monospace";
+    ctxBlocks.fillStyle = "rgb(64, 118, 124)";
+    ctxBlocks.strokeStyle = "rgb(64, 118, 124)";
+    ctxBlocks.fillText("CLICK 'Start'", 80, 100);
+    ctxBlocks.strokeText("CLICK 'Start'", 80, 100);
+    ctxBlocks.fillText("BUTTON TO BEGIN GAME!", 50, 130);
+    ctxBlocks.strokeText("BUTTON TO BEGIN GAME!", 50, 130);
     ctxBlocks.fillText("controls:", 30, 200);
     ctxBlocks.strokeText("controls:", 30, 200);
     ctxBlocks.fillText("up    - rotate block", 30, 230);
