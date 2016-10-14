@@ -29,9 +29,9 @@ Routs:
 ###Live preview:###
 [https://rawgit.com/marianamn/Telerik-Academy-Activities/master/Projects/01.%20ClothesStore/ClothesStore/index.html#/home](https://rawgit.com/marianamn/Telerik-Academy-Activities/master/Projects/01.%20ClothesStore/ClothesStore/index.html#/home)
 
-![](/PrintScreens/01.home-page1.png)
-![](/PrintScreens/01.home-page2.png)
-![](/PrintScreens/01.home-page3.png)
+![](./PrintScreens/01.home-page1.png)
+![](./PrintScreens/01.home-page2.png)
+![](./PrintScreens/01.home-page3.png)
 ![](/PrintScreens/02.register-form.png)
 ![](/PrintScreens/05.categories.png)
 ![](/PrintScreens/07.filter-by-name.png)
