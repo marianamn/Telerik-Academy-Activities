@@ -27,5 +27,4 @@ The **Tetris Game** game requires players to strategically rotate, move, and dro
 
 
 ###Live preview:###
-[https://rawgit.com/marianamn/Telerik-Academy-Activities/master/TeamWorks/03.%20Tetris%20Game/Tetris-game/tetris_game.html](https://rawgit.com/marianamn/Telerik-Academy-Activities/master/TeamWorks/03.%20Tetris%20Game/Tetris-game/tetris_game.html "Play online: ")
-
+[https://cdn.rawgit.com/marianamn/Telerik-Academy-Activities/master/Projects/02.%20Tetris%20Game/Tetris-game/tetris_game.html](https://cdn.rawgit.com/marianamn/Telerik-Academy-Activities/master/Projects/02.%20Tetris%20Game/Tetris-game/tetris_game.html)
