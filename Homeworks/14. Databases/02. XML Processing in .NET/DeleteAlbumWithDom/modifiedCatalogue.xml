@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<catalogue>
+  <album>
+    <name>One Wild Night Live 1985–2001</name>
+    <artist>Bon Jovi</artist>
+    <year>2001</year>
+    <price>10</price>
+    <songs>
+      <song>
+        <title>It's My Life</title>
+        <duration>3:50</duration>
+      </song>
+      <song>
+        <title>Livin' on a Prayer</title>
+        <duration>5:13</duration>
+      </song>
+      <song>
+        <title>Runaway</title>
+        <duration>4:47</duration>
+      </song>
+      <song>
+        <title>You Give Love a Bad Name</title>
+        <duration>3:53</duration>
+      </song>
+      <song>
+        <title>Something for the Pain</title>
+        <duration>4:22</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Lost Highway</name>
+    <artist>Bon Jovi</artist>
+    <year>2007</year>
+    <price>12</price>
+    <songs>
+      <song>
+        <title>Lost Highway</title>
+        <duration>4:13</duration>
+      </song>
+      <song>
+        <title>Seat Next to You</title>
+        <duration>4:21</duration>
+      </song>
+      <song>
+        <title>The Last Night</title>
+        <duration>3:32</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+  </album>
+  <album>
+    <name>Vetrove</name>
+    <artist>Lili Ivanova</artist>
+    <year>1986</year>
+    <price>19</price>
+    <songs>
+      <song>
+        <title>Vetrove</title>
+        <duration>5:00</duration>
+      </song>
+      <song>
+        <title>Detelini</title>
+        <duration>5:12</duration>
+      </song>
+      <song>
+        <title>Stari moi proatelu</title>
+        <duration>5:23</duration>
+      </song>
+    </songs>
+  </album>
+</catalogue>

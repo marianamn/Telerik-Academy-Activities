@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<directory>
+  <dir path="../../">
+    <dir path="../../bin">
+      <dir path="../../bin\Debug">
+        <file name="TraverseDirectory2.exe" />
+        <file name="TraverseDirectory2.exe.config" />
+        <file name="TraverseDirectory2.pdb" />
+        <file name="TraverseDirectory2.vshost.exe" />
+        <file name="TraverseDirectory2.vshost.exe.config" />
+        <file name="TraverseDirectory2.vshost.exe.manifest" />
+      </dir>
+      <dir path="../../bin\Release" />
+    </dir>
+    <dir path="../../obj">
+      <dir path="../../obj\Debug">
+        <dir path="../../obj\Debug\TempPE" />
+        <file name="10. TraverseDirectory2.csproj.FileListAbsolute.txt" />
+        <file name="DesignTimeResolveAssemblyReferencesInput.cache" />
+        <file name="TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+        <file name="TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+        <file name="TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+        <file name="TraverseDirectory2.csproj.FileListAbsolute.txt" />
+        <file name="TraverseDirectory2.exe" />
+        <file name="TraverseDirectory2.pdb" />
+      </dir>
+    </dir>
+    <dir path="../../Properties">
+      <file name="AssemblyInfo.cs" />
+    </dir>
+    <file name="10. TraverseDirectory2.csproj" />
+    <file name="App.config" />
+    <file name="TraverseDirectory.cs" />
+  </dir>
+</directory>

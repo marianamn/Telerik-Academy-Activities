@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xslt" href="stylesheet.xslt"?>
+
+<students xmlns:students="urn:students">
+  <student>
+    <name>Pesho</name>
+    <sex>Male</sex>
+    <birthDate>1990-01-29</birthDate>
+    <phone>+359882838485</phone>
+    <email>pesho@abv.bg</email>
+    <course>Databases</course>
+    <specialty>IT</specialty>
+    <facultyNumber>123456</facultyNumber>
+    <exams>
+      <exam>
+        <examName>MySQL</examName>
+        <tutor>Doncho</tutor>
+        <score>70</score>
+      </exam>
+      <exam>
+        <examName>Database</examName>
+        <tutor>Nikolay</tutor>
+        <score>70</score>
+      </exam>
+    </exams>
+    <enrollment>
+      <date>2015-09-29</date>
+      <examScore>5.50</examScore>
+    </enrollment>
+    <teacherEndorsements>Very good stuedent</teacherEndorsements>
+  </student>
+
+  <student>
+    <name>Lili</name>
+    <sex>Female</sex>
+    <birthDate>1991-01-29</birthDate>
+    <phone>+359883838485</phone>
+    <email>lili@abv.bg</email>
+    <course>JavaScript</course>
+    <specialty>IT</specialty>
+    <facultyNumber>145456</facultyNumber>
+    <exams>
+      <exam>
+        <examName>JavaScript Basics</examName>
+        <tutor>Doncho</tutor>
+        <score>75</score>
+      </exam>
+      <exam>
+        <examName>JavaScript Apps</examName>
+        <tutor>Nikolay</tutor>
+        <score>56</score>
+      </exam>
+    </exams>
+    <enrollment>
+      <date>2015-09-30</date>
+      <examScore>4.50</examScore>
+    </enrollment>
+    <teacherEndorsements>Very abitious stuedent</teacherEndorsements>
+  </student>
+</students>
