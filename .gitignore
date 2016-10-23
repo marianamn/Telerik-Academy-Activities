@@ -39,6 +39,9 @@ TestResult.xml
 [Rr]eleasePS/
 dlldata.c
 
+# Packages #
+.zip
+
 # DNX
 project.lock.json
 artifacts/
@@ -240,5 +243,3 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
-
-*.zip
