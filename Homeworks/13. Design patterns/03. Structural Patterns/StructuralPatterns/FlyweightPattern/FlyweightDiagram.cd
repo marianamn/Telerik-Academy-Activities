@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FlyweightPattern.MetallicMoney" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MetallicMoney.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.148" Collapsed="true" />
+  </Class>
+  <Class Name="FlyweightPattern.MoneyFactory" Collapsed="true">
+    <Position X="2" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAEAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MoneyFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlyweightPattern.MoneyFactoryEngine" Collapsed="true">
+    <Position X="2" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>MoneyFactoryEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlyweightPattern.PaperMoney" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PaperMoney.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="FlyweightPattern.IMoney">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IMoney.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

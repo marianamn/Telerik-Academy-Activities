@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ProxyPattern.HighResolutionImage" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>HighResolutionImage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="1.3" Collapsed="true" />
+  </Class>
+  <Class Name="ProxyPattern.ImageProxy" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAABAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ImageProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" Collapsed="true" />
+  </Class>
+  <Class Name="ProxyPattern.ImageViewer" Collapsed="true">
+    <Position X="1" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>ImageViewer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ProxyPattern.Image">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Image.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
