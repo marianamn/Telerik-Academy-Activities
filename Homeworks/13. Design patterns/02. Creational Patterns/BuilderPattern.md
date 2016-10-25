@@ -18,7 +18,7 @@ Builder позволява създаването на сложен обект �
 
 ### Структура на design pattern-a###
 
-![](/Images/BuilderStructure.png)
+![](Images/BuilderStructure.png)
 
 
 ### Участници ###
@@ -43,7 +43,7 @@ Builder позволява създаването на сложен обект �
 
 **Class diagram:**
 
-![](/Images/BuilderExample.png)
+![](Images/BuilderExample.png)
 
 **Code:**
 
