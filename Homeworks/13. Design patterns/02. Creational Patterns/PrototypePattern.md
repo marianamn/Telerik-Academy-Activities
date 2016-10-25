@@ -24,7 +24,7 @@ Prototype pattern създава обекти с помощта на обект-
 
 ### Структура на design pattern-a###
 
-![](/Images/PrototypeStructure.png)
+![](Images/PrototypeStructure.png)
 
 
 ### Участници ###
@@ -50,7 +50,7 @@ Prototype pattern създава обекти с помощта на обект-
 
 **Class diagram:**
 
-![](/Images/PrototypeExample.png)
+![](Images/PrototypeExample.png)
 
 **Code:**
 
