@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SortingHomework
+namespace SortingAlgorithms
 {
     public class SelectionSorter<T> : ISorter<T> where T : IComparable<T>
     {
